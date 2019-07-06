@@ -1,31 +1,28 @@
 package com.artifact.config;
 
 
+import com.artifact.jwt.JwtConfigurer;
+import com.artifact.jwt.JwtTokenProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.factory.PasswordEncoderFactories;
-import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-import javax.servlet.http.HttpServletResponse;
 import java.util.Arrays;
 
 @Configuration
-@EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
-    }
+    @Autowired
+    JwtTokenProvider jwtTokenProvider;
 
     @Bean
     @Override
@@ -69,16 +66,21 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .cors()
                 .and()
-                .csrf().disable().exceptionHandling()
-                .authenticationEntryPoint(
-                        (request, response, authException) -> response.sendError(HttpServletResponse.SC_UNAUTHORIZED))
+                .csrf().disable()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .authorizeRequests().antMatchers("/**")/*
+                .authorizeRequests()/*
                     .antMatchers("/", "/registration", "/js", "/error**").permitAll()
                     .antMatchers("/onlyforadmin/**").hasAuthority("ADMIN")
                     .antMatchers("/secured/**").hasAnyAuthority("USER", "ADMIN")
-                    .anyRequest()*/.authenticated()
+                    .anyRequest()*/
+                .antMatchers("/auth/signin").permitAll()
+                .antMatchers(HttpMethod.GET, "/posts/**").permitAll()
+                .antMatchers(HttpMethod.DELETE, "/posts/**").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/v1/posts/**").permitAll()
+                .anyRequest().authenticated()
                 .and()
-                .httpBasic();
+                .httpBasic().disable()
+                .apply(new JwtConfigurer(jwtTokenProvider));
     }
 }
