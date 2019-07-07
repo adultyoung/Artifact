@@ -1,10 +1,4 @@
-create schema if not exists public;
-
-comment on schema public is 'Artifact`s schema';
-
-alter schema public owner to postgres;
-
-create table if not exists flyway_schema_history
+create table flyway_schema_history
 (
     installed_rank integer not null
         constraint flyway_schema_history_pk
@@ -22,12 +16,12 @@ create table if not exists flyway_schema_history
 
 alter table flyway_schema_history owner to postgres;
 
-create index if not exists flyway_schema_history_s_idx
+create index flyway_schema_history_s_idx
     on flyway_schema_history (success);
 
-create table if not exists permission
+create table permission
 (
-    id varchar(255) not null
+    id bigint not null
         constraint permission_pkey
             primary key,
     name varchar(255)
@@ -35,9 +29,23 @@ create table if not exists permission
 
 alter table permission owner to postgres;
 
-create table if not exists role
+create table post
 (
-    id varchar(255) not null
+    id bigint not null
+        constraint post_pkey
+            primary key,
+    author bytea,
+    creation_date varchar(255),
+    message varchar(255),
+    pic varchar(255),
+    tags varchar(255)
+);
+
+alter table post owner to postgres;
+
+create table role
+(
+    id bigint not null
         constraint role_pkey
             primary key,
     name varchar(255)
@@ -45,30 +53,28 @@ create table if not exists role
 
 alter table role owner to postgres;
 
-create table if not exists permission_role
+create table permission_role
 (
-    role_id varchar(255) not null
+    role_id bigint not null
         constraint fk50sfdcvbvdaclpn7wp4uop4ml
             references role,
-    permission_id varchar(255) not null
+    permission_id bigint not null
         constraint fk3tuvkbyi6wcytyg21hvpd6txw
             references permission
 );
 
 alter table permission_role owner to postgres;
 
-create table if not exists usr
+create table usr
 (
-    id varchar(255) not null
+    id bigint not null
         constraint usr_pkey
             primary key,
     activation_code varchar(255),
     active boolean default true,
     email varchar(255),
     last_visit timestamp,
-    lastname varchar(255),
     locale varchar(255),
-    name varchar(255),
     password varchar(255),
     picture varchar(255),
     username varchar(255)
@@ -76,31 +82,13 @@ create table if not exists usr
 
 alter table usr owner to postgres;
 
-create table if not exists post
+create table user_roles
 (
-    id varchar(255) not null
-        constraint post_pkey
-            primary key,
-    creation_date varchar(255),
-    message varchar(255),
-    pic varchar(255),
-    tags varchar(255),
-    user_id varchar(255)
-        constraint fkrm2u0ujvvi9euawhsm1km29m4
-            references usr
-);
-
-alter table post owner to postgres;
-
-create table if not exists role_user
-(
-    user_id varchar(255) not null
-        constraint fk9m0k8ofl4n2iamt5jc4r26050
+    user_id bigint not null
+        constraint fkg6agnwreityp2vf23bm2jgjm3
             references usr,
-    role_id varchar(255) not null
-        constraint fkiqpmjd2qb4rdkej916ymonic6
-            references role
+    roles varchar(255)
 );
 
-alter table role_user owner to postgres;
+alter table user_roles owner to postgres;
 

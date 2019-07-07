@@ -3,15 +3,19 @@ package com.artifact.config;
 
 import com.artifact.jwt.JwtConfigurer;
 import com.artifact.jwt.JwtTokenProvider;
+import com.artifact.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -19,6 +23,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import java.util.Arrays;
 
 @Configuration
+@EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -29,11 +34,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
-/*
+
+    @Bean
+    public BCryptPasswordEncoder encoder () {
+        return new BCryptPasswordEncoder();
+    }
 
     @Autowired
     private CustomUserDetailsService customUserDetailsService;
-*/
 
 
     @Bean
@@ -48,39 +56,28 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return source;
     }
 
-   /* @Override
+    @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
-                .inMemoryAuthentication()
-                .withUser("admin").password("{noop}password").authorities("USER", "ADMIN")
-                .and()
-                .withUser("user").password("{noop}password").authorities("USER");
-        auth
-                .userDetailsService(customUserDetailsService).passwordEncoder(passwordEncoder());
-
+                .userDetailsService(customUserDetailsService)
+                .passwordEncoder(encoder());
     }
-    }*/
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .cors()
+                    .csrf().disable()
+                    .sessionManagement()
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .csrf().disable()
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                    .authorizeRequests()
+                        .antMatchers("/auth/signin").permitAll()
+                        .antMatchers(HttpMethod.GET, "/posts/**").permitAll()
+                        .antMatchers(HttpMethod.DELETE, "/posts/**").hasRole("ADMIN")
+                        .antMatchers(HttpMethod.GET, "/v1/posts/**").permitAll()
+                    .anyRequest().authenticated()
                 .and()
-                .authorizeRequests()/*
-                    .antMatchers("/", "/registration", "/js", "/error**").permitAll()
-                    .antMatchers("/onlyforadmin/**").hasAuthority("ADMIN")
-                    .antMatchers("/secured/**").hasAnyAuthority("USER", "ADMIN")
-                    .anyRequest()*/
-                .antMatchers("/auth/signin").permitAll()
-                .antMatchers(HttpMethod.GET, "/posts/**").permitAll()
-                .antMatchers(HttpMethod.DELETE, "/posts/**").hasRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/v1/posts/**").permitAll()
-                .anyRequest().authenticated()
-                .and()
-                .httpBasic().disable()
-                .apply(new JwtConfigurer(jwtTokenProvider));
+                    .httpBasic().disable()
+                    .apply(new JwtConfigurer(jwtTokenProvider));
     }
 }

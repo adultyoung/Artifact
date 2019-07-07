@@ -1,3 +1,4 @@
+/*
 package com.artifact;
 
 import com.artifact.dao.PostDao;
@@ -28,28 +29,29 @@ public class DataInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        log.debug("initializing posts   data...");
-        Arrays.asList("moto", "car").forEach(v -> this.postDao.saveAndFlush(Post.builder().message(v).build()));
-
-        log.debug("printing all posts...");
-        this.postDao.findAll().forEach(v -> log.debug(" Posts :" + v.toString()));
-
-//this.userDao.save(User.builder()
-//                .username("user")
-//                .password(this.encoder.encode("password"))
-//                .roles(Arrays.asList( "ROLE_USER"))
-//                .build()
-//        );
+//        log.debug("initializing posts   data...");
+//        Arrays.asList("moto", "car").forEach(v -> this.postDao.saveAndFlush(Post.builder().message(v).build()));
 //
-//        this.userDao.save(User.builder()
-//                .username("admin")
-//                .password(this.encoder.encode("password"))
-//                .roles(Arrays.asList("ROLE_USER", "ROLE_ADMIN"))
-//                .build()
-//        );
-//
-//        log.debug("printing all users...");
-//        this.userDao.findAll().forEach(v -> log.debug(" User :" + v.toString()));
+//        log.debug("printing all posts...");
+//        this.postDao.findAll().forEach(v -> log.debug(" Posts :" + v.toString()));
+
+this.userDao.save(User.builder()
+                .username("user")
+                .password(this.encoder.encode("password"))
+                .roles(Arrays.asList( "ROLE_USER"))
+                .build()
+        );
+
+        this.userDao.save(User.builder()
+                .username("admin")
+                .password(this.encoder.encode("password"))
+                .roles(Arrays.asList("ROLE_USER", "ROLE_ADMIN"))
+                .build()
+        );
+
+        log.debug("printing all users...");
+        this.userDao.findAll().forEach(v -> log.debug(" User :" + v.toString()));
 
     }
 }
+*/

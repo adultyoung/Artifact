@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ec30e55-400c-423a-bd2c-26a5384fed23" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/controller/UserInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/AuthenticationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/PostForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/utils/InvalidJwtAuthenticationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/utils/PostNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/utils/RestExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/artifact/ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/artifact/PostDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/artifact/PostJpaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/artifact/PostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/db/migration/V1.0__init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/db/migration/V1.1__init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/db/migration/V2.0__init.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
@@ -31,40 +12,32 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_toast.33HYYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_toast.33HYYw.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_toast_temp_1.5ixBaA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifacttest.ZBH91w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifacttest.ZBH91w/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/ArtifactApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/ArtifactApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/config/OAuth2AuthServerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/config/OAuth2ResourceServerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/DataInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/DataJpaConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/controller/ResourceController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/dao/PostDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/dao/PostDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/dao/UserDetailsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/dao/UserDetailsDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/jwt/CustomAccessTokenConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/jwt/CustomTokenEnhancer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/service/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/service/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/Permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/Permission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/Role.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/artifact/ArtifactApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/artifact/AuthenticationClaimsIntegrationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/db/migration/V1.0__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/db/migration/V1.0__init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/artifact/ApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/artifact/ApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/artifact/PostDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/artifact/PostDaoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/ArtifactApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/ArtifactApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/config/OAuth2AuthServerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/config/OAuth2ResourceServerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/controller/ResourceController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/dao/PostDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dao/PostDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/dao/UserDetailsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dao/UserDetailsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/CustomAccessTokenConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/CustomTokenEnhancer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/service/CustomUserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/artifact/ArtifactApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/artifact/AuthenticationClaimsIntegrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1.0__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1.0__init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/artifact/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/artifact/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -75,6 +48,7 @@
     <ignored path="$PROJECT_DIR$/lib/build/" />
     <ignored path="$PROJECT_DIR$/src/.gradle/" />
     <ignored path="$PROJECT_DIR$/src/build/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +121,45 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PostgreSQL - postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="artifact: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PostgreSQL - postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="artifacttest: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PostgreSQL - postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="artifacttest: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PostgreSQL - postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="artifacttest: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PostgreSQL - postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="artifacttest: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
@@ -178,22 +191,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="374">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,10 +203,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/PostDaoTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/ArtifactApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -214,10 +215,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/PostTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="17">
+              <caret line="37" column="25" lean-forward="true" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -226,7 +227,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/post">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/ApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="39">
+              <caret line="24" selection-start-line="24" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifacttest/schema/public/table/usr">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
               <filtering>
@@ -237,19 +247,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.6.RELEASE/cd87ebca4cb4f40ace39540e119173a3922933be/spring-boot-autoconfigure-2.1.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/service/CustomUserDetailsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="131" column="50" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
+            <state relative-caret-position="68">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/PostJpaTest.java">
+        <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifacttest/schema/public/table/user_roles">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
+              <filtering>
+                <filter text="" />
+              </filtering>
+              <column-attributes>
+                <column name="ctid" enabled="false" position="-1" />
+              </column-attributes>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="15" selection-start-line="15" selection-end-line="16" />
+            <state relative-caret-position="17">
+              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -258,19 +282,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+            <state relative-caret-position="188">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -279,10 +294,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/Post.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/PostDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+            <state relative-caret-position="300">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -324,11 +342,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/CustonTokenEnhancer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/OAuth2AuthServerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/OAuth2ResourceServerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/CustomAccessTokenConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/OAuth2Configuration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/OAuth2ResourceServerConfigJwt.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/CustomTokenEnhancer.java" />
@@ -337,46 +350,57 @@
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/model/CustomPrincipal.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/com/artifact/AuthenticationClaimsIntegrationTest.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/resources/public.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/OAuth2AuthServerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/OAuth2ResourceServerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1.0__init.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/dao/UserDetailsDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/service/CustomUserDetailsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/UserInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/AuthenticationRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtConfigurer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtAuthenticationEntryPoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtProperties.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/InvalidJwtAuthenticationException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/utils/RestExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/ArtifactApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/dao/PostDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/artifact/ApplicationTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/artifact/ApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/utils/PostNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/PostForm.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/artifact/tets.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/AuthController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/artifact/PostJpaTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/Post.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/artifact/PostDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/artifact/PostTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/ArtifactApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/Permission.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1.0__init.sql" />
+        <option value="$PROJECT_DIR$/src/test/resources/migration/V1.0__init.sql" />
+        <option value="$PROJECT_DIR$/src/test/java/com/artifact/ApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/application.properties" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e2939543-c745-4544-bd8c-96b3cd93066b/console.sql" />
+        <option value="$PROJECT_DIR$/src/test/resources/db/migration/V1.0__init.sql" />
+        <option value="$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/test/java/com/artifact/PostDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/service/CustomUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
@@ -503,15 +527,6 @@
               <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="artifact" type="462c0819:PsiDirectoryNode" />
-              <item name="ArtifactApplication.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -549,6 +564,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="migration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
@@ -612,7 +635,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -624,13 +647,28 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\main\resources\keyStore" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\test\resources\db" />
       <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\main\resources" />
       <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\test\resources" />
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\main\resources\keyStore" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8091/auth/signin" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -644,7 +682,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PostTest">
+  <component name="RunManager" selected="JUnit.PostControllerTest">
+    <configuration name="IntegrationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Artifact.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.artifact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.artifact" />
+      <option name="MAIN_CLASS_NAME" value="com.artifact.IntegrationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PostControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Artifact.test" />
       <extension name="coverage">
@@ -656,22 +709,6 @@
       <option name="PACKAGE_NAME" value="com.artifact" />
       <option name="MAIN_CLASS_NAME" value="com.artifact.PostControllerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostControllerTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Artifact.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.artifact.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.artifact" />
-      <option name="MAIN_CLASS_NAME" value="com.artifact.PostControllerTest" />
-      <option name="METHOD_NAME" value="testSave" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -734,19 +771,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ArtifactApplication" />
-      <item itemvalue="JUnit.PostControllerTest" />
-      <item itemvalue="JUnit.PostControllerTest.testSave" />
+      <item itemvalue="JUnit.IntegrationTests" />
       <item itemvalue="JUnit.PostJpaTest" />
+      <item itemvalue="JUnit.PostControllerTest" />
       <item itemvalue="JUnit.PostDaoTest" />
       <item itemvalue="JUnit.PostTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PostTest" />
-        <item itemvalue="JUnit.PostDaoTest" />
-        <item itemvalue="JUnit.PostJpaTest" />
-        <item itemvalue="JUnit.PostControllerTest.testSave" />
         <item itemvalue="JUnit.PostControllerTest" />
+        <item itemvalue="JUnit.IntegrationTests" />
+        <item itemvalue="JUnit.PostTest" />
+        <item itemvalue="JUnit.PostJpaTest" />
+        <item itemvalue="JUnit.PostDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -767,44 +804,44 @@
       <workItem from="1562241702480" duration="502000" />
       <workItem from="1562242283591" duration="13362000" />
       <workItem from="1562333321831" duration="13142000" />
-      <workItem from="1562399723197" duration="18896000" />
+      <workItem from="1562399723197" duration="27530000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PostControllerTest - 2019.07.06 at 15h 38m 36s.xml">
+    <history-entry file="PostJpaTest - 2019.07.07 at 13h 36m 34s.xml">
+      <configuration name="PostJpaTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PostTest - 2019.07.07 at 13h 36m 46s.xml">
+      <configuration name="PostTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PostControllerTest - 2019.07.07 at 13h 39m 25s.xml">
       <configuration name="PostControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PostControllerTest - 2019.07.06 at 15h 41m 42s.xml">
+    <history-entry file="PostControllerTest - 2019.07.07 at 13h 44m 23s.xml">
       <configuration name="PostControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PostControllerTest_testSave - 2019.07.06 at 15h 45m 26s.xml">
-      <configuration name="PostControllerTest.testSave" configurationId="JUnit" />
+    <history-entry file="PostControllerTest - 2019.07.07 at 13h 45m 55s.xml">
+      <configuration name="PostControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PostControllerTest_testSave - 2019.07.06 at 15h 47m 12s.xml">
-      <configuration name="PostControllerTest.testSave" configurationId="JUnit" />
+    <history-entry file="PostControllerTest - 2019.07.07 at 13h 46m 47s.xml">
+      <configuration name="PostControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PostJpaTest - 2019.07.06 at 15h 53m 12s.xml">
-      <configuration name="PostJpaTest" configurationId="JUnit" />
+    <history-entry file="PostControllerTest - 2019.07.07 at 13h 48m 53s.xml">
+      <configuration name="PostControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PostJpaTest - 2019.07.06 at 16h 02m 42s.xml">
-      <configuration name="PostJpaTest" configurationId="JUnit" />
+    <history-entry file="PostControllerTest - 2019.07.07 at 13h 51m 31s.xml">
+      <configuration name="PostControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PostJpaTest - 2019.07.06 at 16h 03m 34s.xml">
-      <configuration name="PostJpaTest" configurationId="JUnit" />
+    <history-entry file="PostControllerTest - 2019.07.07 at 13h 55m 25s.xml">
+      <configuration name="PostControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PostJpaTest - 2019.07.06 at 16h 30m 31s.xml">
-      <configuration name="PostJpaTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PostDaoTest - 2019.07.06 at 16h 36m 24s.xml">
-      <configuration name="PostDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PostDaoTest - 2019.07.06 at 16h 37m 44s.xml">
-      <configuration name="PostDaoTest" configurationId="JUnit" />
+    <history-entry file="PostControllerTest - 2019.07.07 at 14h 00m 41s.xml">
+      <configuration name="PostControllerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54535000" />
+    <option name="totallyTimeSpent" value="63169000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
@@ -834,14 +871,14 @@
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Thumbnails" order="15" weight="0.32932165" />
       <window_info anchor="bottom" id="Messages" order="16" weight="0.32932165" />
-      <window_info anchor="bottom" id="Database Console" order="17" weight="0.3261105" />
+      <window_info anchor="bottom" id="Database Console" order="17" weight="0.32603937" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" weight="0.32932165" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32822758" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32822758" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32932165" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.32932165" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -907,31 +944,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java</url>
-          <line>41</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java</url>
-          <line>42</line>
+          <line>44</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java</url>
-          <line>38</line>
+          <line>40</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java</url>
-          <line>39</line>
+          <line>41</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java</url>
-          <line>40</line>
+          <line>42</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
@@ -963,43 +1000,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java</url>
-          <line>42</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java</url>
-          <line>44</line>
+          <line>47</line>
           <properties />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java</url>
-          <line>41</line>
+          <line>44</line>
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java</url>
-          <line>47</line>
+          <line>50</line>
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java</url>
-          <line>50</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java</url>
-          <line>87</line>
+          <line>90</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java</url>
-          <line>88</line>
+          <line>91</line>
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
@@ -1023,132 +1060,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="497" selection-start-line="497" selection-end-line="497" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#1464#1658#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/statements/RunBefores.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.1.8.RELEASE/bff0205b0e1a8219a07309aa90589ad71414ed55/spring-test-5.1.8.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestMethodCallbacks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.1.8.RELEASE/bff0205b0e1a8219a07309aa90589ad71414ed55/spring-test-5.1.8.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.21/70f76ccdee679e557a0787debe05d7ab783d8b55/tomcat-embed-core-9.0.21-sources.jar!/org/apache/catalina/connector/RequestFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="689" selection-start-line="689" selection-end-line="689" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.1.5.RELEASE/2d0bd2618f3d384b83dcc225d78588f05af9229d/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/header/HeaderWriterFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.1.5.RELEASE/2d0bd2618f3d384b83dcc225d78588f05af9229d/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.1.5.RELEASE/2d0bd2618f3d384b83dcc225d78588f05af9229d/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="182" selection-start-line="182" selection-end-line="182" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.8.RELEASE/4e19ca13005f5175b8cf87c0d3a0df681d2e55c/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/filter/RequestContextFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/2.1.6.RELEASE/5422732136c0b3db089fcd80f69f8ffeffc7106b/spring-boot-actuator-2.1.6.RELEASE-sources.jar!/org/springframework/boot/actuate/metrics/web/servlet/WebMvcMetricsFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.21/70f76ccdee679e557a0787debe05d7ab783d8b55/tomcat-embed-core-9.0.21-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="195" selection-start-line="195" selection-end-line="195" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.8.RELEASE/4e19ca13005f5175b8cf87c0d3a0df681d2e55c/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/4.0.0/894ac3a674c00a2d8d448e86aa79ee4e37e76c3c/rest-assured-4.0.0-sources.jar!/io/restassured/http/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.rest-assured/rest-assured/4.0.0/894ac3a674c00a2d8d448e86aa79ee4e37e76c3c/rest-assured-4.0.0-sources.jar!/io/restassured/internal/RequestSpecificationImpl.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="174" selection-start-line="174" selection-end-line="174" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.1.5.RELEASE/48ad8a299212cef3d4601b2154c9ea5c64a27f85/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.1.5.RELEASE/48ad8a299212cef3d4601b2154c9ea5c64a27f85/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/authentication/AbstractAuthenticationToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -1197,90 +1108,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/user_roles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
-          <filtering>
-            <filter text="" />
-          </filtering>
-          <column-attributes>
-            <column name="ctid" enabled="false" position="-1" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1.0__init.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/usr">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/ArtifactApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1292,23 +1123,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#884#885#0" expanded="true" />
             <element signature="e#959#960#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1348,43 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="39" column="89" selection-start-line="39" selection-start-column="81" selection-end-line="39" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.6.RELEASE/cd87ebca4cb4f40ace39540e119173a3922933be/spring-boot-autoconfigure-2.1.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1392,20 +1169,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/Post.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+        <state relative-caret-position="370">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.1.5.RELEASE/48ad8a299212cef3d4601b2154c9ea5c64a27f85/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/authentication/AuthenticationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/Post.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        <state relative-caret-position="357">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/ArtifactApplication.http">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dao/UserDetailsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/permission_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="ctid" enabled="false" position="-1" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/permission">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/user_roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="ctid" enabled="false" position="-1" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/sequence/hibernate_sequence">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/db/migration/V1.0__init.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifacttest/schema/public/table/role_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="ctid" enabled="false" position="-1" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e2939543-c745-4544-bd8c-96b3cd93066b/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="1" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/db/migration/V1.0__init.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/usr">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
+          <filtering>
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
@@ -1418,20 +1357,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/PostJpaTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1.0__init.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" selection-start-line="15" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-680">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/PostDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        <state relative-caret-position="294">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1440,8 +1376,113 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/PostTest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/PostJpaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/PostDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/ApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="24" selection-start-line="24" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifacttest/schema/public/table/user_roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="ctid" enabled="false" position="-1" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifacttest/schema/public/table/usr">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="43a73c3c-d599-448a-a083-3c9ed485854e">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/ArtifactApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/service/CustomUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/PostControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="37" column="25" lean-forward="true" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

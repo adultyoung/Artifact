@@ -1,6 +1,7 @@
 package com.artifact;
 
 import org.junit.runner.RunWith;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import com.artifact.jwt.PostForm;
@@ -21,6 +22,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 public class ApplicationTests {
 
     private MockMvc mockMvc;

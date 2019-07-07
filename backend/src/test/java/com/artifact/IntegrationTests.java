@@ -1,6 +1,7 @@
 package com.artifact;
 
 import org.junit.runner.RunWith;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import com.artifact.jwt.AuthenticationRequest;
@@ -22,6 +23,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 @Slf4j
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 public class IntegrationTests {
 
     @LocalServerPort

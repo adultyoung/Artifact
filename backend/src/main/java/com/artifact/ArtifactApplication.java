@@ -21,24 +21,5 @@ public class ArtifactApplication {
 		SpringApplication.run(ArtifactApplication.class, args);
 	}
 
-	@Bean
-	public BCryptPasswordEncoder encoder () {
-		return new BCryptPasswordEncoder();
-	}
 
-
-}
-
-@Configuration
-@EnableJpaAuditing
-class DataJpaConfig {
-
-	@Bean
-	public AuditorAware<User> auditor() {
-		return () -> Optional.ofNullable(SecurityContextHolder.getContext())
-				.map(SecurityContext::getAuthentication)
-				.filter(Authentication::isAuthenticated)
-				.map(Authentication::getPrincipal)
-				.map(User.class::cast);
-	}
 }
