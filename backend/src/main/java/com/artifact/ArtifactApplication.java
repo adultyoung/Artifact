@@ -11,6 +11,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.Optional;
 
@@ -21,5 +23,13 @@ public class ArtifactApplication {
 		SpringApplication.run(ArtifactApplication.class, args);
 	}
 
-
+	@Bean
+	public WebMvcConfigurer corsConfigurer() {
+		return new WebMvcConfigurer() {
+			@Override
+			public void addCorsMappings(CorsRegistry registry) {
+				registry.addMapping("/auth/signin").allowedOrigins("http://localhost:8080");
+			}
+		};
+	}
 }

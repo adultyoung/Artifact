@@ -25,7 +25,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -33,11 +32,22 @@
               <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
               <item name="Artifact" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Artifact" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Artifact" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -72,16 +82,17 @@
       <updated>1562241671133</updated>
       <workItem from="1562241675967" duration="17000" />
       <workItem from="1562399685076" duration="20000" />
+      <workItem from="1562504107407" duration="29000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37000" />
+    <option name="totallyTimeSpent" value="66000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2549234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2603939" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />

@@ -11,5 +11,4 @@ public interface UserDetailsDao extends JpaRepository<User, String> {
 
     User findByEmail(String email);
 
-
 }
