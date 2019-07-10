@@ -1,68 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ec30e55-400c-423a-bd2c-26a5384fed23" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/event-bus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/NotFound.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/Secured.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/SignIn.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/store/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/store/getters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/store/mutations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/store/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_temp_1.zkWuFg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_temp_1.zkWuFg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_toast.33HYYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_toast.33HYYw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/pg_toast_temp_1.5ixBaA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifacttest.ZBH91w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifacttest.ZBH91w/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/vue.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/config/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/Permission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/db/migration/V1.0__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/db/migration/V1.0__init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/js/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/artifact/IntegrationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/artifact/IntegrationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/db/migration/V1.0__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/db/migration/V1.0__init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Permission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1.0__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1.0__init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/db/migration/V1.0__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/db/migration/V1.0__init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/check-versions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/webpack.base.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/webpack.dev.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/build/webpack.prod.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/config/dev.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/config/prod.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/frontend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/api/resource.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/messages/MessageForm.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/messages/MessageRow.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/MessageList.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/router/router.js" beforeDir="false" />
-    </list>
+    <list default="true" id="2ec30e55-400c-423a-bd2c-26a5384fed23" name="Default Changelist" comment="1" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -223,15 +162,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../frontend/artifact/node_modules/vue/types/vue.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="57" column="2" selection-start-line="57" selection-start-column="2" selection-end-line="57" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/store.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -252,11 +182,6 @@
               <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../frontend/artifact/store/mutations.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -281,11 +206,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/net/DualStackPlainSocketImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="444">
               <caret line="282" column="22" selection-start-line="282" selection-start-column="22" selection-end-line="282" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../frontend/artifact/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -377,7 +321,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1.0__init.sql" />
@@ -386,6 +329,7 @@
         <option value="$PROJECT_DIR$/../frontend/artifact/src/components/SignIn.vue" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/store.js" />
         <option value="$PROJECT_DIR$/../frontend/artifact/store/actions.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java" />
       </list>
     </option>
   </component>
@@ -395,7 +339,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -859,7 +803,7 @@
       <workItem from="1562526999499" duration="583000" />
       <workItem from="1562535261361" duration="34327000" />
       <workItem from="1562686275918" duration="7514000" />
-      <workItem from="1562746841916" duration="24966000" />
+      <workItem from="1562746841916" duration="25284000" />
     </task>
     <servers />
   </component>
@@ -896,12 +840,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154406000" />
+    <option name="totallyTimeSpent" value="154724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25929978" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25929978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -911,7 +856,7 @@
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32822758" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.2560175" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.2560175" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40262583" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1167,14 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../frontend/frontend.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1307,16 +1244,6 @@
           <column-attributes>
             <column name="ctid" enabled="false" position="-1" />
           </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1472,6 +1399,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
           <caret line="282" column="22" selection-start-line="282" selection-start-column="22" selection-end-line="282" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
