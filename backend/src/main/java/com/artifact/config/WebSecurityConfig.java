@@ -19,6 +19,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
 import java.time.LocalDateTime;
 
@@ -56,17 +57,20 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                     .csrf()
                 .and()
+                    .csrf().ignoringAntMatchers("/auth/signin")
+                    .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+                .and()
                     .sessionManagement()
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                    .authorizeRequests()
-                        .antMatchers("/", "error**").permitAll()
+                    .antMatcher("/**").authorizeRequests()
+                        .antMatchers("/", "/login", "error**").permitAll()
                         .antMatchers("/auth/signin").permitAll()
-                        .antMatchers("/login**").permitAll()
                         .antMatchers(HttpMethod.GET, "/posts/**").permitAll()
                         .antMatchers(HttpMethod.DELETE, "/posts/**").hasRole("ADMIN")
                         .antMatchers(HttpMethod.GET, "/v1/posts/**").permitAll()
-                    .anyRequest().authenticated()
+                        .antMatchers("/onlyforadmin/**").hasAuthority("ADMIN")
+                .anyRequest().authenticated()
                 .and()
                     .logout()
                         .logoutSuccessUrl("/").permitAll()

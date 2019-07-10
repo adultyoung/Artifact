@@ -19,16 +19,6 @@ alter table flyway_schema_history owner to postgres;
 create index flyway_schema_history_s_idx
     on flyway_schema_history (success);
 
-create table permission
-(
-    id bigint not null
-        constraint permission_pkey
-            primary key,
-    name varchar(255)
-);
-
-alter table permission owner to postgres;
-
 create table post
 (
     id bigint not null
@@ -43,31 +33,9 @@ create table post
 
 alter table post owner to postgres;
 
-create table role
-(
-    id bigint not null
-        constraint role_pkey
-            primary key,
-    name varchar(255)
-);
-
-alter table role owner to postgres;
-
-create table permission_role
-(
-    role_id bigint not null
-        constraint fk50sfdcvbvdaclpn7wp4uop4ml
-            references role,
-    permission_id bigint not null
-        constraint fk3tuvkbyi6wcytyg21hvpd6txw
-            references permission
-);
-
-alter table permission_role owner to postgres;
-
 create table usr
 (
-    id bigint not null
+    id varchar(255) not null
         constraint usr_pkey
             primary key,
     activation_code varchar(255),
@@ -84,7 +52,7 @@ alter table usr owner to postgres;
 
 create table user_roles
 (
-    user_id bigint not null
+    user_id varchar(255) not null
         constraint fkg6agnwreityp2vf23bm2jgjm3
             references usr,
     roles varchar(255)
