@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
 import com.artifact.service.CustomUserDetailsService;
@@ -30,6 +31,8 @@ public class JwtTokenProvider {
 
     @Value("${security.jwt.token.expire-length:3600000}")
     private long validityInMilliseconds = 3600000; // 1h
+
+    private static final String COOKIE_BEARER = "COOKIE-BEARER";
 
     @Autowired
     private CustomUserDetailsService userDetailsService;
@@ -85,5 +88,4 @@ public class JwtTokenProvider {
             throw new InvalidJwtAuthenticationException("Expired or invalid JWT token");
         }
     }
-
 }

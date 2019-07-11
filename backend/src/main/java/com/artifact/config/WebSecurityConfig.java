@@ -3,7 +3,7 @@ package com.artifact.config;
 
 import com.artifact.dao.UserDetailsDao;
 import com.artifact.domain.User;
-import com.artifact.jwt.JwtConfigurer;
+import com.artifact.jwt.JwtTokenAuthenticationFilter;
 import com.artifact.jwt.JwtTokenProvider;
 import com.artifact.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,13 +19,18 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.time.LocalDateTime;
+import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
-@EnableOAuth2Sso
+//@EnableOAuth2Sso
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -35,6 +40,18 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
+    }
+
+    @Bean
+    CorsConfigurationSource corsConfigurationSource() {
+        CorsConfiguration config = new CorsConfiguration();
+        config.setAllowCredentials(true);
+        config.setAllowedOrigins(Arrays.asList("http://localhost:8080"));
+        config.addAllowedHeader("*");
+        config.addAllowedMethod("*");
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", config);
+        return source;
     }
 
     @Bean
@@ -55,10 +72,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                    .csrf()
+                    .cors()
                 .and()
-                    .csrf().ignoringAntMatchers("/auth/signin")
-                    .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+                    .csrf()
+                .ignoringAntMatchers("/login")
+                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                 .and()
                     .sessionManagement()
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
@@ -72,11 +90,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         .antMatchers("/onlyforadmin/**").hasAuthority("ADMIN")
                 .anyRequest().authenticated()
                 .and()
-                    .logout()
-                        .logoutSuccessUrl("/").permitAll()
-                .and()
-                    .httpBasic().disable()
-                    .apply(new JwtConfigurer(jwtTokenProvider));
+                    .addFilterBefore(new JwtTokenAuthenticationFilter("/login", jwtTokenProvider), UsernamePasswordAuthenticationFilter.class);
     }
 
     @Bean

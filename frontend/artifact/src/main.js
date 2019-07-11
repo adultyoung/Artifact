@@ -7,6 +7,9 @@ import 'vuetify/dist/vuetify.min.css'
 import store from './store'
 import * as axios from "axios"
 
+var VueCookie = require('vue-cookie');
+Vue.use(VueCookie);
+
 axios.defaults.withCredentials = true
 
 // Setting up Axios on Vue Instance, for use via this.$axios

@@ -14,15 +14,15 @@ import java.util.Arrays;
 @EnableWebSecurity
 public class WebMvcConfig implements WebMvcConfigurer {
 
-    @Bean
+    /*@Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.setAllowedOrigins(Arrays.asList("http://localhost:8081"));
+        config.setAllowedOrigins(Arrays.asList("http://localhost:8080"));
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", config);
         return source;
-    }
+    }*/
 }
