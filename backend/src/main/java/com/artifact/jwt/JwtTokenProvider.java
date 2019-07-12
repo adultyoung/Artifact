@@ -7,7 +7,9 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
+import com.artifact.dao.UserDetailsDao;
 import com.artifact.service.CustomUserDetailsService;
 import com.artifact.utils.InvalidJwtAuthenticationException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
 import io.jsonwebtoken.Claims;
@@ -42,20 +45,25 @@ public class JwtTokenProvider {
         secretKey = Base64.getEncoder().encodeToString(secretKey.getBytes());
     }
 
-    public String createToken(String username, List<String> roles) {
+    public void addAuth(HttpServletResponse res, Authentication auth) {
 
+        String username = auth.getName();
         Claims claims = Jwts.claims().setSubject(username);
-        claims.put("roles", roles);
+        claims.put("roles", auth.getAuthorities());
 
         Date now = new Date();
         Date validity = new Date(now.getTime() + validityInMilliseconds);
 
-        return Jwts.builder()//
+        String token = Jwts.builder()//
                 .setClaims(claims)//
                 .setIssuedAt(now)//
                 .setExpiration(validity)//
                 .signWith(SignatureAlgorithm.HS256, secretKey)//
                 .compact();
+        Cookie cookie = new Cookie(COOKIE_BEARER, token);
+        cookie.setHttpOnly(true);
+        cookie.setPath("/");
+        res.addCookie(cookie);
     }
 
     public Authentication getAuthentication(String token) {
@@ -85,7 +93,7 @@ public class JwtTokenProvider {
 
             return true;
         } catch (JwtException | IllegalArgumentException e) {
-            throw new InvalidJwtAuthenticationException("Expired or invalid JWT token");
+            return false;
         }
     }
 }

@@ -32,6 +32,9 @@
           <v-flex class="text-xs-center" mt-5>
             <v-btn v-on:click="userSignIn" type="submit" :disabled="loading" dark color="teal lighten-1" autofocus>Sign In</v-btn>
           </v-flex>
+          <v-flex class="text-xs-center" mt-5>
+            <v-btn v-on:click="oauth2Google" type="submit" :disabled="loading" dark color="teal lighten-1" autofocus>Sign In via Google</v-btn>
+          </v-flex>
         </v-layout>
       </form>
     </v-flex>
@@ -70,6 +73,9 @@
     methods: {
       userSignIn () {
         this.$store.dispatch('userSignIn', {username: this.username, password: this.password})
+      },
+      oauth2Google () {
+        this.$store.dispatch('oauth2Google')
       }
     }
   }

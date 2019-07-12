@@ -24,7 +24,7 @@ export default {
   methods: {
     getHomePageInformation() {
       this.$axios
-        .get('http://localhost:8091/test')
+        .get('http://localhost:8091/')
         .then(response => {
           console.log("Get response: ", response.data);
           this.data = response.data

@@ -11,6 +11,8 @@ import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth
 import org.springframework.boot.autoconfigure.security.oauth2.resource.PrincipalExtractor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -30,7 +32,7 @@ import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
-//@EnableOAuth2Sso
+@EnableOAuth2Sso
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -43,6 +45,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
+    @Order(Ordered.HIGHEST_PRECEDENCE)
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
@@ -75,22 +78,22 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .cors()
                 .and()
                     .csrf()
-                .ignoringAntMatchers("/login")
-                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
-                .and()
-                    .sessionManagement()
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                    .ignoringAntMatchers("/login")
+                    .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                 .and()
                     .antMatcher("/**").authorizeRequests()
-                        .antMatchers("/", "/login", "error**").permitAll()
+                        .antMatchers("/", "/login", "/logout", "error**").permitAll()
                         .antMatchers("/auth/signin").permitAll()
-                        .antMatchers(HttpMethod.GET, "/posts/**").permitAll()
-                        .antMatchers(HttpMethod.DELETE, "/posts/**").hasRole("ADMIN")
+                        .antMatchers(HttpMethod.GET, "/posts/**").hasAuthority("USER")
+                        .antMatchers(HttpMethod.DELETE, "/posts/**").hasAuthority("USER")
                         .antMatchers(HttpMethod.GET, "/v1/posts/**").permitAll()
                         .antMatchers("/onlyforadmin/**").hasAuthority("ADMIN")
+                    .antMatchers("/secured/**").hasAnyAuthority("USER", "ADMIN")
                 .anyRequest().authenticated()
                 .and()
-                    .addFilterBefore(new JwtTokenAuthenticationFilter("/login", jwtTokenProvider), UsernamePasswordAuthenticationFilter.class);
+                    .logout().logoutUrl("/logout")
+                .and()
+                    .addFilterBefore(new JwtTokenAuthenticationFilter("/login", jwtTokenProvider, authenticationManager()), UsernamePasswordAuthenticationFilter.class);
     }
 
     @Bean

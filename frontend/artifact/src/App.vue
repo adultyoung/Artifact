@@ -69,11 +69,15 @@
     methods: {
       userSignOut() {
         this.$store.dispatch('userSignOut')
+        this.$axios.post('http://localhost:8091/logout').then(res => {
+          if (res.ok) {
+            console.log(res.ok)
+          }
+        })
       }
     }
   }
 </script>
 
 <style scoped>
-
 </style>

@@ -12,8 +12,13 @@ Vue.use(VueCookie);
 
 axios.defaults.withCredentials = true
 
+const CSRF_TOKEN = document.cookie.match(new RegExp(`XSRF-TOKEN=([^;]+)`));
+const instance = axios.create({
+  headers: { "X-XSRF-TOKEN": CSRF_TOKEN,
+    withCredentials: true}
+});
 // Setting up Axios on Vue Instance, for use via this.$axios
-Vue.prototype.$axios = axios
+Vue.prototype.$axios = instance
 Vue.config.productionTip = false
 Vue.use(VueResource)
 Vue.use(Vuetify, {
