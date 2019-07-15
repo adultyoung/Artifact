@@ -8,7 +8,7 @@ import { EventBus } from '../event-bus.js'
 export const actions = {
     oauth2Google ({commit}) {
         commit('setLoading', true)
-        axios.post('http://localhost:8091/auth/oauth')
+        axios.get('http://localhost:8091/auth/oauth')
             .then(res => {
                 commit ('setAuth', true)
                 commit ('setLoading', false)

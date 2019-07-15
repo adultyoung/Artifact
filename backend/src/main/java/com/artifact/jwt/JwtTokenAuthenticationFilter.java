@@ -44,6 +44,7 @@ public class JwtTokenAuthenticationFilter extends AbstractAuthenticationProcessi
             jwtTokenProvider.addAuth(response, auth);
             return auth;
         }
+
     }
 
     @Data

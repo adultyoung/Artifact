@@ -2,63 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ec30e55-400c-423a-bd2c-26a5384fed23" name="Default Changelist" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Views.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dto/EventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dto/MessagePageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dto/MetaDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dto/ObjectType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dto/WsEventDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/utils/WsSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/util/ws.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/config/WebSecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/jwt/AuthenticationRequest$AuthenticationRequestBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/jwt/AuthenticationRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/jwt/JwtTokenAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/jwt/JwtTokenAuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/jwt/JwtTokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/jwt/JwtTokenProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/db/migration/V1.0__init.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/db/migration/V1.1__init.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/db/migration/V2.0__init.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/jwt/JwtTokenAuthenticationFilter$AuthenticationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/jwt/JwtTokenAuthenticationFilter$AuthenticationRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/AuthenticationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/AuthenticationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/artifact/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/components/SignIn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/SignIn.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/artifact/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/store/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/artifact/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/store/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/artifact/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/vue.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/artifact/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/.yarn-integrity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/external/jasmine/1.3.1/MIT.LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/external/jasmine/1.3.1/jasmine-html.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/external/jasmine/1.3.1/jasmine.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/external/jasmine/1.3.1/jasmine.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/test/SpecRunner.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/test/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/tiny-cookie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/tiny-cookie/tiny-cookie.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/build/vue-cookie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/dev.testem.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/src/vue-cookie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/test.gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/test/bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/test/spec/vue-cookie-spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/testem.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/vue-cookie/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/yarn.lock" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -210,11 +178,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="455">
+              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/utils/WsSender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -223,37 +200,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/MetaDto.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/ObjectType.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/MessagePageDto.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/EventType.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/WsEventDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#796#797#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#1009#1010#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/SignIn.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="74" column="92" selection-start-line="74" selection-start-column="92" selection-end-line="74" selection-end-column="92" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/Views.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/AuthController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="544">
+              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -261,61 +245,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+            <state relative-caret-position="255">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#router-link#0;n#v-toolbar-title#0;n#v-toolbar#0;n#v-app#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../frontend/artifact/store/actions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -328,8 +262,8 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="Vue Single File Component" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -368,11 +302,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../frontend/build/webpack.base.conf.js" />
-        <option value="$PROJECT_DIR$/../frontend/index.html" />
-        <option value="$PROJECT_DIR$/../frontend/src/components/messages/MessageList.vue" />
-        <option value="$PROJECT_DIR$/../frontend/src/router/router.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/Post.java" />
         <option value="$PROJECT_DIR$/src/main/resources/package.json" />
         <option value="$PROJECT_DIR$/src/main/resources/build/check-versions.js" />
         <option value="$PROJECT_DIR$/src/main/resources/src/main.js" />
@@ -391,16 +320,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/build/webpack.dev.conf.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/router.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/artifact/IntegrationTests.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1.0__init.sql" />
         <option value="$PROJECT_DIR$/src/test/resources/db/migration/V1.0__init.sql" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/store.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java" />
         <option value="$PROJECT_DIR$/../frontend/artifact/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/vue.config.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/CorsFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/CorsFilterConf.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/CorsFilterConfig.java" />
@@ -409,16 +335,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/AuthController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/AuthenticationRequest.java" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/axiosConfig.js" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/src/main.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/components/Home.vue" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/CorsConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/components/SignIn.vue" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/vue.config.js" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/main.js" />
         <option value="$PROJECT_DIR$/../frontend/artifact/store/actions.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/store/state.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/utils/WsSender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/dto/WsEventDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/Views.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" />
       </list>
     </option>
   </component>
@@ -442,7 +376,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -511,6 +444,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="artifact" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="artifact" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
@@ -629,6 +571,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -643,7 +586,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../spring-security-jwt-csrf-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/artifact/dto" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -658,22 +601,23 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\main\java\com\artifact\dto" />
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\util" />
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\components" />
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact" />
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\store" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.artifact.domain" />
+      <recent name="com.artifact.controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\assets" />
       <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\public" />
       <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\main\resources\templates" />
       <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\main\resources\src\components" />
       <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\main\resources\src\components\messages" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.artifact.controller" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\components" />
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact" />
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\store" />
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\main\resources\src" />
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\main\resources\src\router" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -877,7 +821,9 @@
       <workItem from="1562829042761" duration="907000" />
       <workItem from="1562830683766" duration="33127000" />
       <workItem from="1562917642516" duration="15483000" />
-      <workItem from="1562933368140" duration="9814000" />
+      <workItem from="1562933368140" duration="10272000" />
+      <workItem from="1563005242241" duration="16573000" />
+      <workItem from="1563173529497" duration="3031000" />
     </task>
     <servers />
   </component>
@@ -914,7 +860,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214414000" />
+    <option name="totallyTimeSpent" value="234476000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -929,7 +875,7 @@
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21663019" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22538294" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -938,16 +884,16 @@
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32822758" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.30525163" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40262583" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49781182" weight="0.30525163" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49781182" weight="0.4059081" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32932165" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.24160346" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32932165" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49781182" weight="0.32275712" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49781182" visible="true" weight="0.32275712" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021882" side_tool="true" weight="0.32275712" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021882" side_tool="true" weight="0.30525163" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32932165" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.21881838" />
@@ -1214,34 +1160,40 @@
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java</url>
-          <line>14</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java</url>
+          <line>101</line>
           <properties />
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="86" />
+          <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java</url>
-          <line>89</line>
+          <line>104</line>
           <properties />
-          <option name="timeStamp" value="87" />
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java</url>
-          <line>90</line>
+          <line>113</line>
           <properties />
-          <option name="timeStamp" value="88" />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/AuthController.java</url>
@@ -1261,13 +1213,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java</url>
-          <line>50</line>
+          <line>51</line>
           <properties field="username" class="com.artifact.jwt.JwtTokenAuthenticationFilter.AuthenticationRequest" />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java</url>
-          <line>51</line>
+          <line>52</line>
           <properties field="password" class="com.artifact.jwt.JwtTokenAuthenticationFilter.AuthenticationRequest" />
           <option name="timeStamp" value="83" />
         </line-breakpoint>
@@ -1275,163 +1227,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java" />
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/node_modules/js-cookie/src/js.cookie.js" />
-    <entry file="file://$PROJECT_DIR$/../frontend/package-lock.json" />
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/store/getters.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/store/mutations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/yarn.lock" />
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5712" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.jsonwebtoken/jjwt/0.2/5de5a553f0113806091ec69512d6f96cb2fcef62/jjwt-0.2-sources.jar!/io/jsonwebtoken/JwtParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="275" column="16" selection-start-line="275" selection-start-column="16" selection-end-line="275" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/utils/RestExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/io/Serializable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.1.5.RELEASE/48ad8a299212cef3d4601b2154c9ea5c64a27f85/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/GrantedAuthority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.1.5.RELEASE/48ad8a299212cef3d4601b2154c9ea5c64a27f85/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/Authentication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="67" column="29" lean-forward="true" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/service/CustomUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/model/CustomPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/utils/InvalidJwtAuthenticationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.1.5.RELEASE/2d0bd2618f3d384b83dcc225d78588f05af9229d/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="281" column="35" selection-start-line="281" selection-start-column="35" selection-end-line="281" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/AuthenticationRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/store/state.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/event-bus.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/axiosConfig.js" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtConfigurer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtAuthenticationEntryPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1449,31 +1248,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/DataInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
           <folding>
             <element signature="e#0#1704#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/user_roles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="13199e9f-97ba-4730-b29f-59aa8e8552a3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-          <column-attributes>
-            <column name="ctid" enabled="false" position="-1" />
-          </column-attributes>
         </state>
       </provider>
     </entry>
@@ -1491,90 +1271,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/NotFound.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/Secured.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199">
-          <caret line="51" column="36" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/AuthController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#router-link#0;n#v-toolbar-title#0;n#v-toolbar#0;n#v-app#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1585,20 +1285,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/SignIn.vue">
+    <entry file="file://$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="74" column="92" selection-start-line="74" selection-start-column="92" selection-end-line="74" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/store/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-782">
+          <caret line="911" column="8" selection-start-line="911" selection-start-column="8" selection-end-line="911" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1607,18 +1298,262 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/user_roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="1c8b8082-732a-4b20-a43b-704b87bbfe9f">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="ctid" enabled="false" position="-1" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dao/UserDetailsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.1.5.RELEASE/2d0bd2618f3d384b83dcc225d78588f05af9229d/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.1.5.RELEASE/2d0bd2618f3d384b83dcc225d78588f05af9229d/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1396">
+          <caret line="333" selection-start-line="333" selection-end-line="333" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/CorsConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/Secured.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/usr">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="925c2c9b-e857-49c5-99f6-b5bc2f3c3868">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/NotFound.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="-525">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/store/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/SignIn.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/store/getters.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/store/mutations.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/store/state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/event-bus.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/util/ws.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/public/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/utils/WsSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/MetaDto.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/ObjectType.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/MessagePageDto.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/EventType.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/WsEventDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/Views.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#router-link#0;n#v-toolbar-title#0;n#v-toolbar#0;n#v-app#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
         </state>
       </provider>
     </entry>

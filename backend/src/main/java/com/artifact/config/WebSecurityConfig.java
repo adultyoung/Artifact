@@ -32,7 +32,7 @@ import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
-@EnableOAuth2Sso
+//@EnableOAuth2Sso
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -49,7 +49,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.setAllowedOrigins(Arrays.asList("http://localhost:8080"));
+        config.setAllowedOrigins(Arrays.asList("http://localhost:8080", "*"));
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
@@ -79,10 +79,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                     .csrf()
                     .ignoringAntMatchers("/login")
+                    .ignoringAntMatchers("/auth/oauth")
                     .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                 .and()
                     .antMatcher("/**").authorizeRequests()
-                        .antMatchers("/", "/login", "/logout", "error**").permitAll()
+                        .antMatchers("/", "/login", "/auth/oauth", "error**").permitAll()
                         .antMatchers("/auth/signin").permitAll()
                         .antMatchers(HttpMethod.GET, "/posts/**").hasAuthority("USER")
                         .antMatchers(HttpMethod.DELETE, "/posts/**").hasAuthority("USER")
@@ -90,8 +91,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         .antMatchers("/onlyforadmin/**").hasAuthority("ADMIN")
                     .antMatchers("/secured/**").hasAnyAuthority("USER", "ADMIN")
                 .anyRequest().authenticated()
-                .and()
-                    .logout().logoutUrl("/logout")
                 .and()
                     .addFilterBefore(new JwtTokenAuthenticationFilter("/login", jwtTokenProvider, authenticationManager()), UsernamePasswordAuthenticationFilter.class);
     }
