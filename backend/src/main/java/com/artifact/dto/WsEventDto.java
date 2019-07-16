@@ -1,8 +1,8 @@
 package com.artifact.dto;
 
+import com.artifact.domain.Views;
 import com.fasterxml.jackson.annotation.JsonRawValue;
 import com.fasterxml.jackson.annotation.JsonView;
-import letscode.sarafan.domain.Views;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

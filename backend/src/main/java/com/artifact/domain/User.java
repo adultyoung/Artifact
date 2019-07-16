@@ -26,8 +26,7 @@ import static java.util.stream.Collectors.toList;
 public class User implements UserDetails {
 
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid")
+
     @JsonView(Views.IdName.class)
     private String id;
     @JsonView(Views.IdName.class)
@@ -46,7 +45,8 @@ public class User implements UserDetails {
     @ElementCollection(fetch = FetchType.EAGER)
     @Builder.Default
     @JsonView(Views.FullProfile.class)
-    private List<String> roles = new ArrayList<>();
+    @Column
+    private List<String> roles = new ArrayList<>(Collections.singleton("USER"));
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -56,6 +56,21 @@ public class User implements UserDetails {
     private String activationCode;
     @Column(columnDefinition = "boolean default true")
     private boolean active;
+
+    @JsonView(Views.FullProfile.class)
+    @OneToMany(
+            mappedBy = "subscriber",
+            orphanRemoval = true
+    )
+    private Set<UserSubscription> subscriptions = new HashSet<>();
+
+    @JsonView(Views.FullProfile.class)
+    @OneToMany(
+            mappedBy = "channel",
+            orphanRemoval = true,
+            cascade = CascadeType.ALL
+    )
+    private Set<UserSubscription> subscribers = new HashSet<>();
 
     @Override
     public String getPassword() {

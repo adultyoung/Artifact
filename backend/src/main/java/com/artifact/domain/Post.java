@@ -2,41 +2,54 @@ package com.artifact.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonView;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.hibernate.annotations.GenericGenerator;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
+@Table
+@ToString(of = {"id", "text"})
+@EqualsAndHashCode(of = {"id"})
 @Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
+@JsonIdentityInfo(
+        property = "id",
+        generator = ObjectIdGenerators.PropertyGenerator.class
+)
 public class Post {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @JsonView(Views.Id.class)
     private Long id;
-
-    private String message;
-    private String tags;
-    private String pic;
+    @JsonView(Views.IdName.class)
+    private String text;
 
     @Column(updatable = false)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
-    private String creationDate;
+    @JsonView(Views.FullPost.class)
+    private LocalDateTime creationDate;
 
-    /*@ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "user_id")*/
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    @JsonView(Views.FullPost.class)
     private User author;
 
-    public Post(String message, String tags, User author) {
-        this.author = author;
-        this.tags = tags;
-        this.message = message;
+    @OneToMany(mappedBy = "post", orphanRemoval = true)
+    @JsonView(Views.FullPost.class)
+    private List<Comment> comments;
 
-    }
+    @JsonView(Views.FullPost.class)
+    private String link;
+    @JsonView(Views.FullPost.class)
+    private String linkTitle;
+    @JsonView(Views.FullPost.class)
+    private String linkDescription;
+    @JsonView(Views.FullPost.class)
+    private String linkCover;
 }

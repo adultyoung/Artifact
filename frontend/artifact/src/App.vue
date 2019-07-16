@@ -1,83 +1,87 @@
 <template>
-  <div id="app">
     <v-app>
-      <v-toolbar color="teal lighten-1" dark fixed app>
-        <v-toolbar-title>
-          <router-link to="/home" tag="span" style="cursor: pointer">
-            Spring Security JWT CSRF Demo
-          </router-link>
-        </v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-toolbar-items class="hidden-xs-only">
-          <v-btn
-                  flat
-                  v-for="item in menuItems"
-                  :key="item.title"
-                  :to="item.path">
-            <v-icon left>{{ item.icon }}</v-icon>
-            {{ item.title }}
-          </v-btn>
-          <v-btn flat @click="userSignOut" v-if="isAuthenticated">
-            <v-icon left>exit_to_app</v-icon>
-            Sign Out
-          </v-btn>
-        </v-toolbar-items>
-      </v-toolbar>
-
-      <v-content>
-        <router-view/>
-      </v-content>
+        <v-toolbar app>
+            <v-toolbar-title>Artifact</v-toolbar-title>
+            <v-btn flat
+                   v-if="profile"
+                   :disabled="$route.path === '/'"
+                   @click="showPosts">
+                Posts
+            </v-btn>
+            <v-spacer></v-spacer>
+            <v-btn flat
+                   v-if="profile"
+                   :disabled="$route.path === '/user'"
+                   @click="showProfile">
+                {{profile.username}}
+            </v-btn>
+            <v-btn v-if="profile" icon href="/logout">
+                <v-icon>exit_to_app</v-icon>
+            </v-btn>
+        </v-toolbar>
+        <v-content>
+            <router-view></router-view>
+        </v-content>
     </v-app>
-  </div>
 </template>
 
 <script>
-  import { EventBus } from '../event-bus.js'
+    import { mapState, mapMutations } from 'vuex'
+    import { addHandler } from './util/ws'
 
-  export default {
-    name: 'App',
-    data() {
-      return {
-        isAuthenticated: false
-      }
-    },
-    created () {
-      this.isAuthenticated = localStorage.getItem("auth")
-      //Use localstorage because isAuthenticated from $store is undefined when event is called
-      EventBus.$on('authenticated', () => {
-        this.isAuthenticated = localStorage.getItem("auth")
-      });
-    },
-    beforeDestroy() {
-      EventBus.$off('authenticated')
-    },
-    computed: {
-      menuItems() {
-        if (this.isAuthenticated) {
-          return [
-            {title: 'Home', path: '/home', icon: 'home'},
-            {title: 'Secured page', path: '/secured', icon: 'vpn_key'}
-          ]
-        } else {
-          return [
-            {title: 'Home', path: '/home', icon: 'home'},
-            {title: 'Sign In', path: '/signIn', icon: 'lock_open'}
-          ]
+    export default {
+        computed: mapState(['profile']),
+        methods: {
+            ...mapMutations([
+                'addPostMutation',
+                'updatePostMutation',
+                'removePostMutation',
+                'addCommentMutation'
+            ]),
+            showPosts() {
+                this.$router.push('/')
+            },
+            showProfile() {
+                this.$router.push('/user')
+            }
+        },
+        created() {
+            addHandler(data => {
+                if (data.objectType === 'POST') {
+                    switch (data.eventType) {
+                        case 'CREATE':
+                            this.addPostMutation(data.body)
+                            break
+                        case 'UPDATE':
+                            this.updatePostMutation(data.body)
+                            break
+                        case 'REMOVE':
+                            this.removePostMutation(data.body)
+                            break
+                        default:
+                            console.error(`Looks like the event type if unknown "${data.eventType}"`)
+                    }
+                } else if (data.objectType === 'COMMENT') {
+                    switch (data.eventType) {
+                        case 'CREATE':
+                            this.addCommentMutation(data.body)
+                            break
+                        default:
+                            console.error(`Looks like the event type if unknown "${data.eventType}"`)
+                    }
+                } else {
+                    console.error(`Looks like the object type if unknown "${data.objectType}"`)
+                }
+            })
+        },
+        beforeMount() {
+            if (!this.profile) {
+                this.$router.replace('/auth')
+            }
         }
-      }
-    },
-    methods: {
-      userSignOut() {
-        this.$store.dispatch('userSignOut')
-        this.$axios.get('http://localhost:8091/logout').then(res => {
-          if (res.ok) {
-            console.log(res.ok)
-          }
-        })
-      }
     }
-  }
 </script>
 
-<style scoped>
+<style>
+
 </style>

@@ -1,26 +1,28 @@
 import Vue from 'vue'
-import App from './App'
+import App from './App.vue'
 import router from './router'
-import VueResource from 'vue-resource'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import store from './store'
 import * as axios from "axios"
+import { connect } from './util/ws'
 
 var VueCookie = require('vue-cookie');
 Vue.use(VueCookie);
 
+
+connect()
+
 axios.defaults.withCredentials = true
 
 // Setting up Axios on Vue Instance, for use via this.$axios
-Vue.prototype.$axios = axios
-Vue.config.productionTip = false
-Vue.use(VueResource)
+Vue.prototype.$axios = axios;
+Vue.config.productionTip = false;
 Vue.use(Vuetify, {
   theme: {
     primary: 'teal'
   }
-})
+});
 
 axios.interceptors.response.use(response => {
       return Promise.resolve(response)
@@ -34,12 +36,12 @@ axios.interceptors.response.use(response => {
       } else {
         return Promise.reject(error.response);
       }
-    })
+    });
 
-new Vue({
+
+export default new Vue({
   el: '#app',
   router,
   store,
-  components: { App },
-  template: '<App/>'
+  render: a => a(App)
 })

@@ -32,7 +32,7 @@ import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
-//@EnableOAuth2Sso
+@EnableOAuth2Sso
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -83,7 +83,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                 .and()
                     .antMatcher("/**").authorizeRequests()
-                        .antMatchers("/", "/login", "/auth/oauth", "error**").permitAll()
+                        .antMatchers("/", "/login", "/sockjs-node/**" , "/gs-guide-websocket/**" ,  "/auth/oauth", "error**").permitAll()
                         .antMatchers("/auth/signin").permitAll()
                         .antMatchers(HttpMethod.GET, "/posts/**").hasAuthority("USER")
                         .antMatchers(HttpMethod.DELETE, "/posts/**").hasAuthority("USER")

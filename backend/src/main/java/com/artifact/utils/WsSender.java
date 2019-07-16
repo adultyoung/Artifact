@@ -1,5 +1,8 @@
 package com.artifact.utils;
 
+import com.artifact.dto.EventType;
+import com.artifact.dto.ObjectType;
+import com.artifact.dto.WsEventDto;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
