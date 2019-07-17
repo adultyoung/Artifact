@@ -18,7 +18,7 @@
             ></comment-item>
         </template>
 
-        <comment-form :message-id="messageId"></comment-form>
+        <comment-form :post-id="postId"></comment-form>
     </v-list>
 </template>
 
@@ -29,7 +29,7 @@
     export default {
         name: 'CommentList',
         components: {CommentForm, CommentItem},
-        props: ['comments', 'messageId']
+        props: ['comments', 'postId']
     }
 </script>
 

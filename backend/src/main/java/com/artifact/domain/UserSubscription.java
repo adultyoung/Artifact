@@ -3,6 +3,7 @@ package com.artifact.domain;
 import com.fasterxml.jackson.annotation.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.EmbeddedId;
@@ -13,6 +14,7 @@ import java.io.Serializable;
 
 @Entity
 @Data
+@NoArgsConstructor
 @EqualsAndHashCode(of = "id")
 @ToString(of = "id")
 public class UserSubscription implements Serializable {

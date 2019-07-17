@@ -79,7 +79,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                     .csrf()
                     .ignoringAntMatchers("/login")
-                    .ignoringAntMatchers("/auth/oauth")
+                    .ignoringAntMatchers("/auth/oauth", "/post/**", "/comment/**", "/profile/**")
                     .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                 .and()
                     .antMatcher("/**").authorizeRequests()
@@ -91,6 +91,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         .antMatchers("/onlyforadmin/**").hasAuthority("ADMIN")
                     .antMatchers("/secured/**").hasAnyAuthority("USER", "ADMIN")
                 .anyRequest().authenticated()
+                .and().logout().logoutSuccessUrl("/").permitAll()
                 .and()
                     .addFilterBefore(new JwtTokenAuthenticationFilter("/login", jwtTokenProvider, authenticationManager()), UsernamePasswordAuthenticationFilter.class);
     }

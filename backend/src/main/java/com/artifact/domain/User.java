@@ -2,10 +2,7 @@ package com.artifact.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonView;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -20,9 +17,9 @@ import static java.util.stream.Collectors.toList;
 @Entity
 @Table(name = "usr")
 @Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
+@EqualsAndHashCode(of = { "id" })
+@ToString(of = { "id", "username" })
+
 public class User implements UserDetails {
 
     @Id
@@ -43,7 +40,6 @@ public class User implements UserDetails {
 
 
     @ElementCollection(fetch = FetchType.EAGER)
-    @Builder.Default
     @JsonView(Views.FullProfile.class)
     @Column
     private List<String> roles = new ArrayList<>(Collections.singleton("USER"));

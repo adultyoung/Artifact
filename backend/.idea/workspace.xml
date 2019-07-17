@@ -2,82 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ec30e55-400c-423a-bd2c-26a5384fed23" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/controller/ProfileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dao/CommentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dao/UserSubscriptionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/UserSubscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/UserSubscriptionId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/artifact/service/ProfileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/api/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/api/posts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/api/profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/LazyLoader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/UserLink.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/media/Media.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/media/YouTube.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/posts/PostForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/posts/PostRow.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/pages/Auth.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/pages/MessageList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/pages/Profile.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/artifact/src/pages/Subscriptions.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2939543-c745-4544-bd8c-96b3cd93066b/storage_v2/_src_/database/artifact.0gXCtg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/config/WebMvcConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/controller/PostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/controller/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/dao/PostDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/dao/PostDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/dao/UserDetailsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/dao/UserDetailsDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/Post$PostBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/controller/UserInfoController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/User$UserBuilder.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/artifact/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/artifact/ApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/artifact/IntegrationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/artifact/PostControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/artifact/PostDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/artifact/PostJpaTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/artifact/PostTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/dao/PostDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dao/PostDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/dao/UserDetailsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dao/UserDetailsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/controller/UserInfoController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Views.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/Views.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/dto/MessagePageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dto/PostPageDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/dto/ObjectType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dto/ObjectType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/dto/WsEventDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/dto/WsEventDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/service/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/utils/WsSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/utils/WsSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/domain/UserSubscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/domain/UserSubscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/artifact/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/components/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/components/NotFound.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/components/Secured.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/components/SignIn.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/api/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/api/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/api/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/api/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/api/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/api/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/components/UserLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/UserLink.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/components/posts/PostForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/components/posts/PostForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/pages/Auth.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/pages/Auth.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/pages/Profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/pages/Profile.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/src/util/ws.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/src/util/ws.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/store/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/store/getters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/store/mutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/store/state.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/artifact/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/artifact/vue.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/artifact/yarn.lock" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -230,100 +193,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="510">
+              <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1341#1342#0" expanded="true" />
+                <element signature="e#1368#1369#0" expanded="true" />
+                <element signature="e#1876#1877#0" expanded="true" />
+                <element signature="e#1916#1917#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/api/comment.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="458">
+              <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/CommentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/AuthController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
+                <element signature="e#0#2479#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/api/posts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../frontend/artifact/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/App.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/store.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="99" column="24" lean-forward="true" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="101" selection-start-line="101" selection-end-line="101" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/pages/Auth.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -331,11 +240,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state>
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/user_subscription">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="24c54d21-0a93-4160-8925-37eeb9650004">
+              <filtering>
+                <filter text="" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/pages/Subscriptions.vue">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/UserSubscription.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/usr">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="24c54d21-0a93-4160-8925-37eeb9650004">
+              <filtering>
+                <filter text="" />
+              </filtering>
             </state>
           </provider>
         </entry>
@@ -348,8 +304,8 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="Vue Single File Component" />
-        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -368,13 +324,22 @@
       <find>jwts</find>
       <find>js-coo</find>
       <find>js-cookie</find>
-      <find>message</find>
       <find>requ</find>
       <find>sarafan</find>
+      <find>user</find>
+      <find>profile</find>
+      <find>author</find>
+      <find>message</find>
+      <find>logout</find>
+      <find>getSingleResul</find>
+      <find>page</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>Post</replace>
+      <replace>profile</replace>
+      <replace>author</replace>
+      <replace>user</replace>
       <replace>post</replace>
     </replaceStrings>
     <dirStrings>
@@ -392,37 +357,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/UserSubscriptionId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/UserSubsciption.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/UserSubscription.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/dao/CommentDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/dao/UserSubcriptionDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/dao/UserSubscriptionDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/dto/ObjectType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/dao/PostDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/CommentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/service/ProfileService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/Views.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/ProfileController.java" />
         <option value="$PROJECT_DIR$/../frontend/artifact/store/state.js" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/src/components/posts/PostForm.vue" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/components/posts/PostRow.vue" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentItem.vue" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentList.vue" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/components/media/Media.vue" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/Post.java" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/api/resource.js" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/src/api/profile.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/Class.java" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/pages/SignIn.vue" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/router.js" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/src/pages/Profile.vue" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/pages/Subscriptions.vue" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/dto/PostPageDto.java" />
         <option value="$PROJECT_DIR$/../frontend/artifact/public/index.html" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/util/ws.js" />
@@ -431,18 +381,33 @@
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/service/CommentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/artifact/service/CustomUserDetailsService.java" />
         <option value="$PROJECT_DIR$/../frontend/artifact/node_modules/@vue/cli-service/lib/commands/serve.js" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/package.json" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/vue.config.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/pages/MessageList.vue" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/src/store.js" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/src/pages/Auth.vue" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/src/api/comment.js" />
-        <option value="$PROJECT_DIR$/../frontend/artifact/src/api/posts.js" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/api/resource,js.js" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/main.js" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/api/profile.js" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/api/posts.js" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/node_modules/webpack/lib/web/JsonpMainTemplate.runtime.js" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/api/comment.js" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentForm.vue" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/Post.java" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentList.vue" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentItem.vue" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/pages/Auth.vue" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/store.js" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/pages/Profile.vue" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/components/UserLink.vue" />
         <option value="$PROJECT_DIR$/../frontend/artifact/src/App.vue" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/src/components/posts/PostForm.vue" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/vue.config.js" />
+        <option value="$PROJECT_DIR$/../frontend/artifact/package.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/domain/UserSubscription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -453,8 +418,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="966" />
-    <option name="width" value="961" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -466,17 +431,13 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
               <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
@@ -529,15 +490,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="artifact" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="artifact" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -547,43 +499,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="artifact" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="artifact" type="462c0819:PsiDirectoryNode" />
-              <item name="jwt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="artifact" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="artifact" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="artifact" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Artifact" type="b2602c69:ProjectViewProjectNode" />
@@ -707,7 +623,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -724,8 +639,11 @@
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -737,24 +655,24 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\main\resources\templates" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\main\resources" />
       <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src" />
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\pages" />
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\api" />
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\components" />
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\components\pages" />
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\assets" />
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\public" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.artifact.domain" />
       <recent name="com.artifact.config" />
       <recent name="com.artifact.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src" />
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\components\pages" />
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\assets" />
-      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\public" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\backend\src\main\resources\templates" />
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src" />
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\pages" />
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\api" />
+      <recent name="C:\Users\mrchk\Desktop\Hackerman\Artifact\frontend\artifact\src\components" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -789,7 +707,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.frontend">
+  <component name="RunManager" selected="Spring Boot.backend">
     <configuration name="backend [getHomeDir]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -962,7 +880,8 @@
       <workItem from="1562917642516" duration="15483000" />
       <workItem from="1562933368140" duration="10272000" />
       <workItem from="1563005242241" duration="16573000" />
-      <workItem from="1563173529497" duration="51702000" />
+      <workItem from="1563173529497" duration="52283000" />
+      <workItem from="1563351794497" duration="23848000" />
     </task>
     <servers />
   </component>
@@ -999,7 +918,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283147000" />
+    <option name="totallyTimeSpent" value="307576000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1011,10 +930,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="966" y="0" width="961" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22752497" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2297593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1041,9 +960,9 @@
       <window_info anchor="bottom" id="Database Console" order="17" weight="0.32603937" />
       <window_info anchor="bottom" id="TypeScript" order="18" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24945295" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32741398" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32713348" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Gradle" order="5" weight="0.32932165" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -1300,19 +1219,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java</url>
-          <line>101</line>
+          <line>102</line>
           <properties />
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java</url>
-          <line>104</line>
+          <line>105</line>
           <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java</url>
-          <line>113</line>
+          <line>114</line>
           <properties />
           <option name="timeStamp" value="91" />
         </line-breakpoint>
@@ -1321,6 +1240,144 @@
           <line>32</line>
           <properties />
           <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>103</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>117</line>
+          <properties />
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/CommentService.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/CommentService.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/CommentService.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/AuthController.java</url>
@@ -1338,6 +1395,70 @@
           </properties>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java</url>
+          <line>46</line>
+          <properties class="com.artifact.controller.PostController" method="create">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java</url>
+          <line>40</line>
+          <properties class="com.artifact.controller.PostController" method="getOne">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java</url>
+          <line>31</line>
+          <properties class="com.artifact.controller.PostController" method="list">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java</url>
+          <line>55</line>
+          <properties class="com.artifact.controller.PostController" method="update">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>101</line>
+          <properties class="com.artifact.service.PostService" method="update">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java</url>
+          <line>55</line>
+          <properties class="com.artifact.service.PostService" method="fillMeta">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/controller/CommentController.java</url>
+          <line>26</line>
+          <properties class="com.artifact.controller.CommentController" method="create">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/artifact/service/CommentService.java</url>
+          <line>25</line>
+          <properties class="com.artifact.service.CommentService" method="create">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java</url>
           <line>51</line>
@@ -1353,143 +1474,22 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="323">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <folding>
-            <element signature="e#0#2479#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/model/CustomPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/PostPageDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/public/index.html">
+    <entry file="file://$PROJECT_DIR$/out/production/classes/com/artifact/domain/Post.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/UserLink.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/pages/Profile.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/pages/Subscriptions.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/api/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/babel.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/event-bus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/utils/WsSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dao/UserDetailsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/service/CommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/service/CustomUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
         </state>
       </provider>
     </entry>
@@ -1500,57 +1500,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/UserSubscription.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+        <state relative-caret-position="357">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/node_modules/@vue/cli-service/lib/commands/serve.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="81" column="65" lean-forward="true" selection-start-line="81" selection-start-column="65" selection-end-line="81" selection-end-column="65" />
+        <state relative-caret-position="222">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebMvcConfig.java">
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/node_modules/@types/normalize-package-data/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="203">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/posts/PostRow.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding>
+            <element signature="e#548#591#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/media/YouTube.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/media/Media.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/Post.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/posts/PostForm.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/posts/PostRow.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/util/ws.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="460">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/router.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="783">
+          <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1561,191 +1585,297 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSocketConfig.java">
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/api/posts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="176" column="11" selection-start-line="176" selection-start-column="11" selection-end-line="176" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#2183#2184#0" expanded="true" />
-            <element signature="e#2219#2220#0" expanded="true" />
-            <element signature="e#2268#2269#0" expanded="true" />
-            <element signature="e#2304#2305#0" expanded="true" />
-            <element signature="e#2362#2363#0" expanded="true" />
-            <element signature="e#2389#2390#0" expanded="true" />
-            <element signature="e#2446#2447#0" expanded="true" />
-            <element signature="e#2473#2474#0" expanded="true" />
-            <element signature="e#2535#2536#0" expanded="true" />
-            <element signature="e#2562#2563#0" expanded="true" />
-            <element signature="e#2610#2611#0" expanded="true" />
-            <element signature="e#2637#2638#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/usr">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="925c2c9b-e857-49c5-99f6-b5bc2f3c3868">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/user_roles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="925c2c9b-e857-49c5-99f6-b5bc2f3c3868">
-          <filtering>
-            <filter text="" />
-          </filtering>
-          <column-attributes>
-            <column name="ctid" enabled="false" position="-1" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/pages/MessageList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/vue.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="99" column="24" lean-forward="true" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+        <state relative-caret-position="136">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/api/profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/jwt/JwtTokenAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/api/comment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/node_modules/vue-material/dist/vue-material.js">
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/event-bus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="24580" column="9" selection-start-line="24580" selection-start-column="9" selection-end-line="24580" selection-end-column="9" />
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/node_modules/vue-resource/dist/vue-resource.js">
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/pages/Auth.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="1500" column="8" selection-start-line="1500" selection-start-column="8" selection-end-line="1500" selection-end-column="8" />
+        <state relative-caret-position="310">
+          <caret line="75" column="102" lean-forward="true" selection-start-line="75" selection-start-column="102" selection-end-line="75" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/PostPageDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/ObjectType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/MetaDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dto/EventType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/UserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/Views.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/dao/PostDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/post">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="24c54d21-0a93-4160-8925-37eeb9650004">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="131" column="20" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/comment/CommentItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/UserLink.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/pages/Profile.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/posts/PostForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/components/LazyLoader.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/util/ws.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../frontend/artifact/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="85">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/api/posts.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="437">
+          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/PostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1341#1342#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1876#1877#0" expanded="true" />
+            <element signature="e#1916#1917#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state>
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/pages/Auth.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/usr">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="24c54d21-0a93-4160-8925-37eeb9650004">
+          <filtering>
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/App.vue">
+    <entry file="das://e2939543-c745-4544-bd8c-96b3cd93066b/database/artifact/schema/public/table/user_subscription">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="24c54d21-0a93-4160-8925-37eeb9650004">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../frontend/artifact/src/pages/Subscriptions.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/service/PostService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="458">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#2479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/domain/UserSubscription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/artifact/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

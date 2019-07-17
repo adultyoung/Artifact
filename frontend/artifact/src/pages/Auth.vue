@@ -42,7 +42,6 @@
 </template>
 
 <script>
-    import { mapActions } from 'vuex'
     export default {
         name: 'Auth',
         data () {

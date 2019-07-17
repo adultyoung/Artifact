@@ -49,7 +49,7 @@ public class PostService {
     ) {
         this.postDao = postDao;
         this.userSubscriptionDao = userSubscriptionDao;
-        this.wsSender = wsSender.getSender(ObjectType.POST, Views.IdName.class);
+        this.wsSender = wsSender.getSender(ObjectType.POST, Views.FullPost.class);
     }
 
 
@@ -100,7 +100,7 @@ public class PostService {
     }
 
     public Post update(Post postFromDb, Post post) throws IOException {
-        BeanUtils.copyProperties(post, postFromDb, "id");
+        postFromDb.setText(post.getText());
         fillMeta(postFromDb);
         Post updatedPost = postDao.save(postFromDb);
 

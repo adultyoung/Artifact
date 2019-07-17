@@ -43,6 +43,7 @@ public class PostController {
     }
 
     @PostMapping
+    @JsonView(Views.FullPost.class)
     public Post create(
             @RequestBody Post post,
             @AuthenticationPrincipal User user
@@ -51,6 +52,7 @@ public class PostController {
     }
 
     @PutMapping("{id}")
+    @JsonView(Views.FullPost.class)
     public Post update(
             @PathVariable("id") Post postFromDb,
             @RequestBody Post post

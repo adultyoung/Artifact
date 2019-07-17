@@ -15,7 +15,7 @@ export default new Vuex.Store({
     profile,
     ...frontendData,
     loading: false,
-    posts: null
+    posts,
   },
   mutations: {
     setUser (state, payload) {
@@ -128,10 +128,8 @@ export default new Vuex.Store({
             commit('setLoading', false)
           })
     },
-    userSignOut ({commit}) {
-      commit ('clearAuth')
-      EventBus.$emit('authenticated', 'User not authenticated')
-      router.push('/signIn')
+    logout () {
+      axios.post('/logout')
     },
     async addPostAction({commit, state}, post) {
       const result = await postsApi.add(post)

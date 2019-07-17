@@ -8,7 +8,7 @@
       <ObjectId>41008</ObjectId>
       <StateNumber>706</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1228</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1237</IntrospectionStateNumber>
       <Visible>1</Visible>
     </database>
     <database id="3" parent="1" name="artifacttest">
@@ -134,7 +134,7 @@
       <Comment>Artifact`s schema</Comment>
       <StateNumber>768</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1229</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1238</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>

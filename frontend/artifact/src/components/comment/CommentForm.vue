@@ -17,7 +17,7 @@
 
     export default {
         name: 'CommentForm',
-        props: ['messageId'],
+        props: ['postId'],
         data() {
             return {
                 text: ''
@@ -28,8 +28,8 @@
             async save() {
                 await this.addCommentAction({
                     text: this.text,
-                    message: {
-                        id: this.messageId
+                    post: {
+                        id: this.postId
                     }
                 })
 

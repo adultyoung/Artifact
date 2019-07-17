@@ -15,7 +15,7 @@
                    @click="showProfile">
                 {{profile.username}}
             </v-btn>
-            <v-btn v-if="profile" icon href="/logout">
+            <v-btn v-if="profile" icon @click="logout">
                 <v-icon>exit_to_app</v-icon>
             </v-btn>
         </v-toolbar>
@@ -38,6 +38,13 @@
                 'removePostMutation',
                 'addCommentMutation'
             ]),
+            logout () {
+                this.$store.dispatch('logout').then(res => {
+                    if (res.ok) {
+                        this.$router.push('/auth')
+                    }
+                })
+            },
             showPosts() {
                 this.$router.push('/')
             },

@@ -4,11 +4,11 @@
         class="px-3"
     >
         <v-avatar
-                v-if="user && user.userpic"
+                v-if="user && user.picture"
                 :size="`${size || 36}px`"
         >
             <img
-                    :src="user.userpic"
+                    :src="user.picture"
                     :alt="user.name"
             >
         </v-avatar>
@@ -30,7 +30,7 @@
         props: ['user', 'size'],
         computed: {
             userName() {
-                return this.user ? this.user.name : 'unknown'
+                return this.user ? this.user.username : 'unknown'
             }
         },
     }
