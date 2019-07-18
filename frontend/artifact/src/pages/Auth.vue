@@ -7,7 +7,14 @@
             <h3>Sign In</h3>
         </v-flex>
         <v-flex xs12 sm6 offset-sm3 mt-3>
-            <form @submit.prevent="userSignIn">
+            <form @submit.prevent="onSubmit">
+                <vue-recaptcha
+                        @verify="login"
+                        ref="invisibleRecaptcha"
+                        @expired="onExpired"
+                        size="invisible"
+                        :sitekey="sitekey"
+                ></vue-recaptcha>
                 <v-layout column>
                     <v-flex>
                         <v-alert error dismissible v-model="alert">
@@ -42,39 +49,56 @@
 </template>
 
 <script>
+    import VueRecaptcha from 'vue-recaptcha';
+    import {mapActions} from 'vuex'
+
     export default {
         name: 'Auth',
-        data () {
+        data() {
             return {
-              username: '',
-              password: '',
-              alert: false
+                sitekey: '6LcNU64UAAAAAPVy8rcn1wFm-eqWTcNGYMkNpgcQ',
+                username: '',
+                password: '',
+                alert: false
             }
         },
+        components: {VueRecaptcha},
         computed: {
-            error () {
+            error() {
                 return this.$store.getters.getError
             },
-            loading () {
+            loading() {
                 return this.$store.getters.getLoading
             }
         },
         watch: {
-            error (value) {
+            error(value) {
                 if (value) {
                     this.alert = true
                 }
             },
-            alert (value) {
+            alert(value) {
                 if (!value) {
                     this.$store.dispatch('setError', false)
                 }
             }
         },
         methods: {
-            userSignIn () {
-                this.$store.dispatch('userSignIn', {username: this.username, password: this.password})
-            }
+            ...mapActions(
+                [
+                    'onExpired'
+                ]
+            ),
+            login() {
+                this.$store.dispatch('userSignIn', {username: this.username, password: this.password}).then(res => {
+                    if (res) {
+                        this.$router.push('/')
+                    }
+                })
+            },
+            onSubmit() {
+                this.$refs.invisibleRecaptcha.execute()
+            },
         }
     }
 </script>

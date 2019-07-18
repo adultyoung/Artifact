@@ -36,6 +36,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
 	implementation 'org.jsoup:jsoup:1.11.3'
 	implementation 'org.flywaydb:flyway-core'
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
 	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
 	compile group: 'com.auth0', name: 'java-jwt', version: '3.8.1'
 	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
@@ -45,6 +46,7 @@ dependencies {
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	annotationProcessor 'org.projectlombok:lombok'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	/*Test*/
 	testCompile group: 'io.rest-assured', name: 'rest-assured', version: '4.0.0'
 	testCompile 'io.rest-assured:json-path:4.0.0'
 	testCompile 'io.rest-assured:xml-path:4.0.0'

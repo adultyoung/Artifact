@@ -94,6 +94,9 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    onExpired () {
+      console.log('Expired')
+    },
     oauth2Google ({commit}) {
       commit('setLoading', true)
       axios.get('http://localhost:8091/auth/oauth')

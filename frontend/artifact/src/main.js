@@ -7,10 +7,6 @@ import store from './store'
 import * as axios from "axios"
 import { connect } from './util/ws'
 
-var VueCookie = require('vue-cookie');
-Vue.use(VueCookie);
-
-
 connect()
 
 axios.defaults.withCredentials = true

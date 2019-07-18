@@ -40,9 +40,7 @@
             ]),
             logout () {
                 this.$store.dispatch('logout').then(res => {
-                    if (res.ok) {
                         this.$router.push('/auth')
-                    }
                 })
             },
             showPosts() {
