@@ -1,14 +1,31 @@
 <template>
     <v-app>
-        <v-toolbar app>
-            <v-toolbar-title>Artifact</v-toolbar-title>
-            <v-btn flat
-                   v-if="profile"
-                   :disabled="$route.path === '/'"
-                   @click="showPosts">
-                Posts
-            </v-btn>
+        <v-toolbar app style="background: #FFFFFF">
             <v-spacer></v-spacer>
+            <v-toolbar-title
+            @click="showPosts">Artifact</v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-btn v-if="profile"
+                   :disabled="$route.path === '/channels'"
+                   icon @click="showChannels">
+                <v-icon>search</v-icon>
+            </v-btn>
+            <v-avatar
+                    v-if="profile && profile.picture"
+                    :size="36"
+            >
+                <img
+                        :src="profile.picture"
+                        :alt="profile.username"
+                >
+            </v-avatar>
+
+            <v-avatar
+                    v-else
+                    :size="36"
+            >
+                <v-icon>person</v-icon>
+            </v-avatar>
             <v-btn flat
                    v-if="profile"
                    :disabled="$route.path === '/user'"
@@ -42,6 +59,9 @@
                 this.$store.dispatch('logout').then(res => {
                         this.$router.push('/auth')
                 })
+            },
+            showChannels() {
+              this.$router.push('/channels')
             },
             showPosts() {
                 this.$router.push('/')

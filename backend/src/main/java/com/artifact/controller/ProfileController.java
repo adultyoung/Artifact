@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -19,6 +20,12 @@ public class ProfileController {
     @Autowired
     public ProfileController(ProfileService profileService) {
         this.profileService = profileService;
+    }
+
+    @GetMapping("get-channels")
+    @JsonView(Views.IdName.class)
+    public List<User> channels() {
+        return profileService.getList();
     }
 
     @GetMapping("{id}")

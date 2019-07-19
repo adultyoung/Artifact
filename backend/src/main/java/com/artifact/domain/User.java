@@ -23,7 +23,6 @@ import static java.util.stream.Collectors.toList;
 public class User implements UserDetails {
 
     @Id
-
     @JsonView(Views.IdName.class)
     private String id;
     @JsonView(Views.IdName.class)

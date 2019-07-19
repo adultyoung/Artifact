@@ -24,6 +24,10 @@ public class ProfileService {
         this.userSubscriptionDao = userSubscriptionDao;
     }
 
+    public List<User> getList() {
+        return userDetailsDao.findAll();
+    }
+
     public User changeSubscription(User channel, User subscriber) {
         List<UserSubscription> subcriptions = channel.getSubscribers()
                 .stream()
