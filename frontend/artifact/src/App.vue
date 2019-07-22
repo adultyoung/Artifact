@@ -1,9 +1,10 @@
 <template>
     <v-app>
-        <v-toolbar app style="background: #FFFFFF">
+            <v-toolbar app flat style="background: #FFFFFF">
             <v-spacer></v-spacer>
             <v-toolbar-title
-            @click="showPosts">Artifact</v-toolbar-title>
+                    @click="showPosts">Artifact
+            </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-btn v-if="profile"
                    :disabled="$route.path === '/channels'"
@@ -11,27 +12,32 @@
                 <v-icon>search</v-icon>
             </v-btn>
             <v-avatar
+                    :disabled="$route.path === '/user'"
+                    @click="showProfile"
                     v-if="profile && profile.picture"
                     :size="36"
             >
-                <img
-                        :src="profile.picture"
-                        :alt="profile.username"
-                >
+                <v-btn flat icon
+                       :disabled="$route.path === '/user'"
+                       @click="showProfile">
+                    <img
+                            :src="profile.picture"
+                            :alt="profile.username"
+                    >
+                </v-btn>
             </v-avatar>
 
             <v-avatar
                     v-else
                     :size="36"
             >
-                <v-icon>person</v-icon>
+                <v-btn flat icon
+                       v-if="profile"
+                       :disabled="$route.path === '/user'"
+                       @click="showProfile">
+                    <v-icon>person</v-icon>
+                </v-btn>
             </v-avatar>
-            <v-btn flat
-                   v-if="profile"
-                   :disabled="$route.path === '/user'"
-                   @click="showProfile">
-                {{profile.username}}
-            </v-btn>
             <v-btn v-if="profile" icon @click="logout">
                 <v-icon>exit_to_app</v-icon>
             </v-btn>
@@ -43,8 +49,8 @@
 </template>
 
 <script>
-    import { mapState, mapMutations } from 'vuex'
-    import { addHandler } from './util/ws'
+    import {mapState, mapMutations} from 'vuex'
+    import {addHandler} from './util/ws'
 
     export default {
         computed: mapState(['profile']),
@@ -55,13 +61,13 @@
                 'removePostMutation',
                 'addCommentMutation'
             ]),
-            logout () {
+            logout() {
                 this.$store.dispatch('logout').then(res => {
-                        this.$router.push('/auth')
+                    this.$router.push('/auth')
                 })
             },
             showChannels() {
-              this.$router.push('/channels')
+                this.$router.push('/channels')
             },
             showPosts() {
                 this.$router.push('/')

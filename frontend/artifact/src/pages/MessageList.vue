@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-layout align-space-around justify-start column>
+        <v-layout row wrap>
             <post-form :postAttr="post" />
             <post-row v-for="post in sortedPosts"
                          :key="post.id"

@@ -1,5 +1,5 @@
 <template>
-    <v-layout row>
+    <v-flex xs12>
         <v-text-field
                 label="New post"
                 placeholder="Write something"
@@ -9,7 +9,7 @@
         <v-btn @click="save">
             Save
         </v-btn>
-    </v-layout>
+    </v-flex>
 </template>
 
 <script>

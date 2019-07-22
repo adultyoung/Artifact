@@ -1,49 +1,54 @@
 <template>
-    <v-layout column>
-        Необходимо авторизоваться через
-        <v-btn href="auth/oauth">Google</v-btn>
+    <v-layout raw wrap fill-height>
 
-        <v-flex xs12 class="text-xs-center" mt-5>
-            <h3>Sign In</h3>
+        <v-flex xs8>
+            <v-spacer></v-spacer>
+            <v-divider vertical></v-divider>
         </v-flex>
-        <v-flex xs12 sm6 offset-sm3 mt-3>
-            <form @submit.prevent="onSubmit">
-                <vue-recaptcha
-                        @verify="login"
-                        ref="invisibleRecaptcha"
-                        @expired="onExpired"
-                        size="invisible"
-                        :sitekey="sitekey"
-                ></vue-recaptcha>
-                <v-layout column>
-                    <v-flex>
-                        <v-alert error dismissible v-model="alert">
-                            {{ error }}
-                        </v-alert>
-                    </v-flex>
-                    <v-flex>
-                        <v-text-field
-                                name="username"
-                                label="Username"
-                                id="username"
-                                type="text"
-                                v-model="username"
-                                required></v-text-field>
-                    </v-flex>
-                    <v-flex>
-                        <v-text-field
-                                name="password"
-                                label="Password"
-                                id="password"
-                                type="password"
-                                v-model="password"
-                                required></v-text-field>
-                    </v-flex>
-                    <v-flex class="text-xs-center" mt-5>
-                        <v-btn type="submit" dark color="teal lighten-1" autofocus>Sign In</v-btn>
-                    </v-flex>
-                </v-layout>
-            </form>
+        <v-flex xs3 class="text-xs-center" my-5>
+            <v-flex mt-5 class="elevation-1" style="background: #FFFFFF">
+                <h2>Sign In</h2>
+                <v-flex sm6 offset-sm3 mt-3>
+                    <form @submit.prevent="onSubmit">
+                        <vue-recaptcha
+                                @verify="login"
+                                ref="invisibleRecaptcha"
+                                @expired="onExpired"
+                                size="invisible"
+                                :sitekey="sitekey"
+                        ></vue-recaptcha>
+                        <v-flex>
+                            <v-alert error dismissible v-model="alert">
+                                {{ error }}
+                            </v-alert>
+                        </v-flex>
+                        <v-flex>
+                            <v-text-field
+                                    name="username"
+                                    label="Username"
+                                    id="username"
+                                    type="text"
+                                    v-model="username"
+                                    required></v-text-field>
+                        </v-flex>
+                        <v-flex>
+                            <v-text-field
+                                    name="password"
+                                    label="Password"
+                                    id="password"
+                                    type="password"
+                                    v-model="password"
+                                    required></v-text-field>
+                        </v-flex>
+                        <v-flex class="text-xs-center" mt-2>
+                            <v-btn type="submit" dark color="teal lighten-1" autofocus>Sign In</v-btn>
+                        </v-flex>
+                    </form>
+                    <v-btn flat href="/auth/oauth">
+                    <h3>Google Sign in</h3>
+                    </v-btn>
+                </v-flex>
+            </v-flex>
         </v-flex>
     </v-layout>
 </template>

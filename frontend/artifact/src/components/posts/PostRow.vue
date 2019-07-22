@@ -1,5 +1,5 @@
 <template>
-    <v-card class="my-2">
+    <v-card class="ma-2" xs3>
         <v-card-text primary-title>
             <user-link
                 :user="post.author"

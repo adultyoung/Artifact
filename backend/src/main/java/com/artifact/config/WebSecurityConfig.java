@@ -83,7 +83,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                 .and()
                     .antMatcher("/**").authorizeRequests()
-                        .antMatchers("/", "/login", "/sockjs-node/**" , "/gs-guide-websocket/**" ,  "/auth/oauth", "error**").permitAll()
+                        .antMatchers("/", "/login", "/sockjs-node/**" , "/gs-guide-websocket/**" , "/assets/**" ,  "/auth/oauth", "error**").permitAll()
                         .antMatchers("/auth/signin").permitAll()
                         .antMatchers(HttpMethod.GET, "/posts/**").hasAuthority("USER")
                         .antMatchers(HttpMethod.DELETE, "/posts/**").hasAuthority("USER")

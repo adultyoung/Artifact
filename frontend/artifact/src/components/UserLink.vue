@@ -1,7 +1,7 @@
 <template>
-    <router-link
+    <v-flex ma-2>
+        <router-link
         :to="`/user/${user.id}`"
-        class="px-3"
     >
         <v-avatar
                 v-if="user && user.picture"
@@ -16,12 +16,14 @@
         <v-avatar
                 v-else
                 :size="`${size || 36}px`"
-                color="indigo"
         >
-            <v-icon dark>account_circle</v-icon>
+            <v-icon>account_circle</v-icon>
         </v-avatar>
+            &nbsp;
         <span>{{ userName }}</span>
     </router-link>
+    </v-flex>
+
 </template>
 
 <script>

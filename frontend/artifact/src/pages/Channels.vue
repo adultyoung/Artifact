@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-layout justify-space-around>
+        <v-layout align-center justify-space-around column>
             <v-list>
                 <v-list-tile
                         v-for="channel in channels"
@@ -8,7 +8,7 @@
                 >
                     <user-link
                             :user="channel"
-                            size="48"
+                            size="36"
                     ></user-link>
                 </v-list-tile>
             </v-list>
