@@ -1,10 +1,41 @@
 <template>
     <v-layout raw wrap fill-height>
+        <v-flex>
+        <v-flex xs3 mt-5 my-5 class="elevation-1 md-alignment-left" style="background: #FFFFFF">
+            <v-form v-model="valid">
+                <v-flex>
+                    <v-text-field
+                            v-model="firstname"
+                            :rules="nameRules"
+                            :counter="10"
+                            label="First name"
+                            required
+                    ></v-text-field>
+                </v-flex>
 
-        <v-flex xs8>
+                <v-flex>
+                    <v-text-field
+                            v-model="lastname"
+                            :rules="nameRules"
+                            :counter="10"
+                            label="Last name"
+                            required
+                    ></v-text-field>
+                </v-flex>
+
+                <v-flex>
+                    <v-text-field
+                            v-model="email"
+                            :rules="emailRules"
+                            label="E-mail"
+                            required
+                    ></v-text-field>
+                </v-flex>
+            </v-form>
+        </v-flex>
+        </v-flex>
             <v-spacer></v-spacer>
             <v-divider vertical></v-divider>
-        </v-flex>
         <v-flex xs3 class="text-xs-center" my-5>
             <v-flex mt-5 class="elevation-1" style="background: #FFFFFF">
                 <h2>Sign In</h2>
@@ -45,7 +76,7 @@
                         </v-flex>
                     </form>
                     <v-btn flat href="/auth/oauth">
-                    <h3>Google Sign in</h3>
+                        <h3>Google Sign in</h3>
                     </v-btn>
                 </v-flex>
             </v-flex>
@@ -61,6 +92,18 @@
         name: 'Auth',
         data() {
             return {
+                valid: false,
+                firstname: '',
+                lastname: '',
+                nameRules: [
+                    v => !!v || 'Name is required',
+                    v => v.length <= 10 || 'Name must be less than 10 characters',
+                ],
+                email: '',
+                emailRules: [
+                    v => !!v || 'E-mail is required',
+                    v => /.+@.+/.test(v) || 'E-mail must be valid',
+                ],
                 sitekey: '6LcNU64UAAAAAPVy8rcn1wFm-eqWTcNGYMkNpgcQ',
                 username: '',
                 password: '',

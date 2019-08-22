@@ -91,7 +91,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         .antMatchers("/onlyforadmin/**").hasAuthority("ADMIN")
                     .antMatchers("/secured/**").hasAnyAuthority("USER", "ADMIN")
                 .anyRequest().authenticated()
-                .and().logout().logoutSuccessUrl("/").permitAll()
+                .and().logout().permitAll()
                 .and()
                     .addFilterBefore(new JwtTokenAuthenticationFilter("/login", jwtTokenProvider, authenticationManager()), UsernamePasswordAuthenticationFilter.class);
     }

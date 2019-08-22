@@ -62,9 +62,7 @@
                 'addCommentMutation'
             ]),
             logout() {
-                this.$store.dispatch('logout').then(res => {
-                    this.$router.push('/auth')
-                })
+                this.$store.dispatch('logout')
             },
             showChannels() {
                 this.$router.push('/channels')

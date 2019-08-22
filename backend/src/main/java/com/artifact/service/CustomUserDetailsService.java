@@ -29,7 +29,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         if (!user.getEmail().isEmpty()) {
             String message = String.format(
                     "Hello, %s! \n" +
-                            "Welcome to suck my d. Please, verify your email: http://localhost:8080/activate/%s",
+                            "Please, verify your email: http://localhost:8080/activate/%s",
                     user.getUsername(),
                     user.getActivationCode()
             );

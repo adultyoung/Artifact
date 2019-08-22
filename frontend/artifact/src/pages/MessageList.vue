@@ -1,18 +1,18 @@
 <template>
     <v-container>
-        <v-layout row wrap>
-            <post-form :postAttr="post" />
+        <v-layout column wrap>
+            <post-form :postAttr="post" sm12/>
             <post-row v-for="post in sortedPosts"
-                         :key="post.id"
-                         :post="post"
-                         :editPost="editPost" />
+                      :key="post.id"
+                      :post="post"
+                      :editPost="editPost"/>
             <lazy-loader></lazy-loader>
         </v-layout>
     </v-container>
 </template>
 
 <script>
-    import { mapGetters } from 'vuex'
+    import {mapGetters} from 'vuex'
     import PostRow from '../components/posts/PostRow.vue'
     import PostForm from '../components/posts/PostForm.vue'
     import LazyLoader from '../components/LazyLoader.vue'
