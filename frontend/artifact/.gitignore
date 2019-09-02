@@ -19,7 +19,9 @@ yarn.lock*
 *.iws
 out/
 artifacts/
-
+.gradle/
+gradle/
+build/
 
 # Editor directories and files
 .vscode
