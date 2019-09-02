@@ -14,14 +14,14 @@ yarn.lock*
 
 
 # Intellij
-.idea/
+.idea
 *.iml
 *.iws
-out/
+out
 artifacts/
-.gradle/
-gradle/
-build/
+.gradle
+gradle
+build
 
 # Editor directories and files
 .vscode
