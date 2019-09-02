@@ -21,7 +21,7 @@ public class PostDaoTest {
 
     @Test
     public void mapping() {
-        Post saved = this.postDao.save( Post.builder().message("test").build());
+        Post saved = this.postDao.save(Post.builder().message("test").build());
         Post v = this.postDao.getOne(saved.getId());
         assertThat(v.getMessage()).isEqualTo("test");
         assertThat(v.getId()).isNotNull();

@@ -9,12 +9,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    isAuthenticated: localStorage.getItem("auth"),
-    user: null,
-    error: null,
     profile,
     ...frontendData,
-    loading: false,
     posts,
   },
   mutations: {
@@ -118,18 +114,15 @@ export default new Vuex.Store({
         password: payload.password,
       }
       commit('setLoading', true)
-      axios.post('/login', data)
-          .then(res => {
-            commit ('setAuth', true)
-            commit ('setLoading', false)
-            commit ('setError', null)
-            EventBus.$emit('authenticated', 'User authenticated')
-            router.push('/home')
-          })
-          .catch(error => {
-            commit('setError', error.post)
-            commit('setLoading', false)
-          })
+      return axios.post('/login', data)
+    },
+    registration ({commit}, payload) {
+      let data = {
+        username: payload.username,
+        password: payload.password,
+        email: payload.email,
+      }
+      axios.post('/registration', data).then(res => console.log(res))
     },
     logout () {
       axios.post('/logout')
@@ -172,21 +165,6 @@ export default new Vuex.Store({
     }
   },
   getters: {
-    appTitle (state) {
-      return state.appTitle
-    },
-    isAuthenticated (state) {
-      return state.isAuthenticated === 'true'
-    },
-    getUser (state) {
-      return state.user
-    },
-    getError (state) {
-      return state.error
-    },
-    getLoading (state) {
-      return state.loading
-    },
     sortedPosts: state => (state.posts || []).sort((a, b) => -(a.id - b.id))
   }
 })

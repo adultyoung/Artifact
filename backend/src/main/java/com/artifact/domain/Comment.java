@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Entity
 @Table
 @Data
-@EqualsAndHashCode(of = { "id" })
+@EqualsAndHashCode(of = {"id"})
 public class Comment {
     @Id
     @GeneratedValue

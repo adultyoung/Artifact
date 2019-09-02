@@ -11,7 +11,7 @@ import java.util.List;
 
 public interface PostDao extends JpaRepository<Post, Long> {
 
-    @EntityGraph(attributePaths = { "comments" })
+    @EntityGraph(attributePaths = {"comments"})
     Page<Post> findByAuthorIn(List<User> users, Pageable pageable);
 
 }

@@ -49,7 +49,7 @@
 </template>
 
 <script>
-    import {mapState, mapMutations} from 'vuex'
+    import {mapMutations, mapState} from 'vuex'
     import {addHandler} from './util/ws'
 
     export default {
@@ -62,7 +62,7 @@
                 'addCommentMutation'
             ]),
             logout() {
-                this.$store.dispatch('logout')
+                this.$store.dispatch('logout').then(res => this.$router.go(0))
             },
             showChannels() {
                 this.$router.push('/channels')

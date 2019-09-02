@@ -1,9 +1,5 @@
 package com.artifact;
 
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 import com.artifact.jwt.AuthenticationRequest;
 import com.artifact.jwt.PostForm;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -13,8 +9,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpStatus;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import static io.restassured.RestAssured.given;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
@@ -25,12 +24,10 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @Slf4j
 public class IntegrationTests {
 
-    @LocalServerPort
-    private int port;
-
     @Autowired
     ObjectMapper objectMapper;
-
+    @LocalServerPort
+    private int port;
     private String token;
 
     @Before
@@ -82,7 +79,7 @@ public class IntegrationTests {
 
         //@formatter:off
         given()
-                .header("Authorization", "Bearer "+token)
+                .header("Authorization", "Bearer " + token)
                 .contentType(ContentType.JSON)
                 .body(PostForm.builder().message("test").build())
 

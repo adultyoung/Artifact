@@ -13,8 +13,9 @@ const routes = [
     { path: '/auth', component: Auth },
     { path: '/user/:id?', component: Profile },
     { path: '/subscriptions/:id', component: Subscriptions },
-    { path: '*', component: MessagesList },
-    { path: '/channels', component: Channels}
+    { path: '*', component: Auth },
+    { path: '/channels', component: Channels},
+
 ]
 
 export default new VueRouter({

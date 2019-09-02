@@ -1,7 +1,7 @@
 <template>
-    <v-container>
-        <v-layout column wrap>
-            <post-form :postAttr="post" sm12/>
+    <v-container fluid>
+        <post-form :postAttr="post"/>
+        <v-layout column align-center>
             <post-row v-for="post in sortedPosts"
                       :key="post.id"
                       :post="post"

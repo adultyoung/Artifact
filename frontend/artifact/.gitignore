@@ -12,8 +12,16 @@ yarn-debug.log*
 yarn-error.log*
 yarn.lock*
 
+
+# Intellij
+.idea/
+*.iml
+*.iws
+out/
+artifacts/
+
+
 # Editor directories and files
-.idea
 .vscode
 *.suo
 *.ntvs*

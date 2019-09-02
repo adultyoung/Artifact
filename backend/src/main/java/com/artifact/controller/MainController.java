@@ -4,6 +4,7 @@ import com.artifact.dao.UserDetailsDao;
 import com.artifact.domain.User;
 import com.artifact.domain.Views;
 import com.artifact.dto.PostPageDto;
+import com.artifact.service.CustomUserDetailsService;
 import com.artifact.service.PostService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,26 +17,28 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.HashMap;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/")
 public class MainController {
+    private final CustomUserDetailsService service;
     private final PostService postService;
     private final UserDetailsDao userDetailsDao;
-
-    @Value("${spring.profiles.active}")
-    private String profile;
     private final ObjectWriter postWriter;
     private final ObjectWriter profileWriter;
+    @Value("${spring.profiles.active}")
+    private String profile;
 
     @Autowired
-    public MainController(PostService postService, UserDetailsDao userDetailsDao, ObjectMapper mapper) {
+    public MainController(PostService postService, UserDetailsDao userDetailsDao, CustomUserDetailsService service , ObjectMapper mapper) {
         this.postService = postService;
         this.userDetailsDao = userDetailsDao;
+        this.service = service;
 
         ObjectMapper objectMapper = mapper
                 .setConfig(mapper.getSerializationConfig());
@@ -76,5 +79,13 @@ public class MainController {
         model.addAttribute("isDevMode", "dev".equals(profile));
 
         return "index";
+    }
+
+    @GetMapping("activate/{code}")
+    public String activate (@PathVariable String code) {
+        service.activateUser(code);
+
+        return "redirect:/";
+
     }
 }

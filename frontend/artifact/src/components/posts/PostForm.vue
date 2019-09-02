@@ -1,4 +1,5 @@
 <template>
+    <v-layout row mx-5>
     <v-flex xs12>
         <v-text-field
                 label="New post"
@@ -6,14 +7,17 @@
                 v-model="text"
                 @keyup.enter="save"
         />
+    </v-flex>
+    <v-flex >
         <v-btn @click="save">
             Save
         </v-btn>
     </v-flex>
+    </v-layout>
 </template>
 
 <script>
-    import { mapActions } from 'vuex'
+    import {mapActions} from 'vuex'
 
     export default {
         props: ['postAttr'],

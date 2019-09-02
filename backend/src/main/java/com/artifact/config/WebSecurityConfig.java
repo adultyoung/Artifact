@@ -19,7 +19,6 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
@@ -37,6 +36,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     JwtTokenProvider jwtTokenProvider;
+    @Autowired
+    private CustomUserDetailsService customUserDetailsService;
 
     @Bean
     @Override
@@ -58,12 +59,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    public BCryptPasswordEncoder encoder () {
+    public BCryptPasswordEncoder encoder() {
         return new BCryptPasswordEncoder();
     }
-
-    @Autowired
-    private CustomUserDetailsService customUserDetailsService;
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -75,25 +73,21 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                    .cors()
+                .cors()
                 .and()
-                    .csrf()
-                    .ignoringAntMatchers("/login")
-                    .ignoringAntMatchers("/auth/oauth", "/post/**", "/comment/**", "/profile/**")
-                    .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+                .csrf()
+                .ignoringAntMatchers("/login")
+                .ignoringAntMatchers("/auth/oauth", "/post/**", "/comment/**", "/profile/**")
+                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                 .and()
-                    .antMatcher("/**").authorizeRequests()
-                        .antMatchers("/", "/login", "/sockjs-node/**" , "/gs-guide-websocket/**" , "/assets/**" ,  "/auth/oauth", "error**").permitAll()
-                        .antMatchers("/auth/signin").permitAll()
-                        .antMatchers(HttpMethod.GET, "/posts/**").hasAuthority("USER")
-                        .antMatchers(HttpMethod.DELETE, "/posts/**").hasAuthority("USER")
-                        .antMatchers(HttpMethod.GET, "/v1/posts/**").permitAll()
-                        .antMatchers("/onlyforadmin/**").hasAuthority("ADMIN")
-                    .antMatchers("/secured/**").hasAnyAuthority("USER", "ADMIN")
-                .anyRequest().authenticated()
-                .and().logout().permitAll()
+                .antMatcher("/**").authorizeRequests()
+                .antMatchers("/", "/login", "/registration/**", "/sockjs-node/**", "/gs-guide-websocket/**", "/assets/**", "/auth/oauth", "error**").permitAll()
+                .antMatchers("/auth/signin").permitAll()
+                .antMatchers(HttpMethod.GET, "/posts/**").hasAuthority("USER")
+                .antMatchers(HttpMethod.DELETE, "/posts/**").hasAuthority("USER")
+                .and().logout().logoutSuccessUrl("/").permitAll()
                 .and()
-                    .addFilterBefore(new JwtTokenAuthenticationFilter("/login", jwtTokenProvider, authenticationManager()), UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(new JwtTokenAuthenticationFilter("/login", jwtTokenProvider, authenticationManager()), UsernamePasswordAuthenticationFilter.class);
     }
 
     @Bean
@@ -104,9 +98,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 User addUser = new User();
 
                 addUser.setId(id);
-                addUser.setUsername((String)map.get("name"));
-                addUser.setEmail((String)map.get("email"));
-                addUser.setPicture((String)map.get("picture"));
+                addUser.setUsername((String) map.get("name"));
+                addUser.setEmail((String) map.get("email"));
+                addUser.setPicture((String) map.get("picture"));
 
                 return addUser;
             });

@@ -11,15 +11,14 @@ import com.artifact.dto.MetaDto;
 import com.artifact.dto.ObjectType;
 import com.artifact.dto.PostPageDto;
 import com.artifact.utils.WsSender;
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.jsoup.Jsoup;
 
 import java.io.IOException;
 import java.time.LocalDateTime;

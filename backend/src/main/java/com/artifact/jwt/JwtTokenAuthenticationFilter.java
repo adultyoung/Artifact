@@ -2,6 +2,7 @@ package com.artifact.jwt;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -9,6 +10,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.web.util.WebUtils;
+import org.thymeleaf.util.StringUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
@@ -20,6 +22,7 @@ public class JwtTokenAuthenticationFilter extends AbstractAuthenticationProcessi
 
     private static final String COOKIE_BEARER = "COOKIE-BEARER";
 
+    @Autowired
     private JwtTokenProvider jwtTokenProvider;
 
     public JwtTokenAuthenticationFilter(String url, JwtTokenProvider jwtTokenProvider, AuthenticationManager authentication) {
@@ -32,18 +35,19 @@ public class JwtTokenAuthenticationFilter extends AbstractAuthenticationProcessi
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException, IOException, ServletException {
         Cookie cookie = WebUtils.getCookie(request, COOKIE_BEARER);
         String token = cookie != null ? cookie.getValue() : null;
+        AuthenticationRequest data = new ObjectMapper().readValue(
+                request.getInputStream(), AuthenticationRequest.class);
 
         if (token != null && jwtTokenProvider.validateToken(token)) {
-            return jwtTokenProvider.getAuthentication(token);
-        }else {
-            AuthenticationRequest data = new ObjectMapper().readValue(
-                    request.getInputStream(), AuthenticationRequest.class);
-                Authentication auth =  getAuthenticationManager()
-                        .authenticate(new UsernamePasswordAuthenticationToken(
-                                data.getUsername(), data.getPassword()));
-            jwtTokenProvider.addAuth(response, auth);
-            return auth;
+            if (StringUtils.equalsIgnoreCase(data.getUsername(), jwtTokenProvider.getUsername(token))) {
+                return jwtTokenProvider.getAuthentication(token);
+            }
         }
+        Authentication auth = getAuthenticationManager()
+                .authenticate(new UsernamePasswordAuthenticationToken(
+                        data.getUsername(), data.getPassword()));
+        jwtTokenProvider.addAuth(response, auth);
+        return auth;
 
     }
 

@@ -1,6 +1,6 @@
 <template>
-    <v-card>
-        <v-flex v-if="type === 'href'" sm6>
+    <v-card flat>
+        <v-flex v-if="type === 'href'">
             <v-img v-if="post.linkCover" :src="post.linkCover" aspect-ratio="2.75"></v-img>
             <v-card-title>
                 <div>
@@ -11,13 +11,12 @@
                 </div>
             </v-card-title>
         </v-flex>
-        <v-flex v-if="type === 'image'" sm6>
+        <v-flex v-if="type === 'image'" >
             <a :href="post.link">
-                <v-img v-if="post.linkCover" :src="post.linkCover" aspect-ratio="2.75"></v-img>
-                {{post.link}}
+                <v-img v-if="post.linkCover" height="600px" :src="post.linkCover" aspect-ratio="2.75"></v-img>
             </a>
         </v-flex>
-        <v-flex v-if="type === 'youtube'" sm6>
+        <v-flex v-if="type === 'youtube'">
             <you-tube :src="post.link"></you-tube>
         </v-flex>
     </v-card>

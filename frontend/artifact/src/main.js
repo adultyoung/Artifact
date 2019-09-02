@@ -5,7 +5,7 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import store from './store'
 import * as axios from "axios"
-import { connect } from './util/ws'
+import {connect} from './util/ws'
 
 connect()
 

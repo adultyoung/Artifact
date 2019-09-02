@@ -1,5 +1,10 @@
 <template>
-    <v-card class="ma-2">
+    <v-card
+            :flat= true
+            :outlined= true
+            :width=560
+            max-height="1200px"
+            class="ma-2">
         <v-card-text primary-title>
             <user-link
                 :user="post.author"
@@ -24,7 +29,7 @@
 </template>
 
 <script>
-    import { mapActions } from 'vuex'
+    import {mapActions} from 'vuex'
     import Media from '../../components/media/Media.vue'
     import CommentList from '../comment/CommentList.vue'
     import UserLink from '../../components/UserLink.vue'

@@ -31,7 +31,7 @@ public class PostController {
     @JsonView(Views.FullPost.class)
     public PostPageDto list(
             @AuthenticationPrincipal User user,
-            @PageableDefault(size = POSTS_PER_PAGE, sort = { "id" }, direction = Sort.Direction.DESC) Pageable pageable
+            @PageableDefault(size = POSTS_PER_PAGE, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable
     ) {
         return postService.findForUser(pageable, user);
     }
