@@ -4,7 +4,7 @@
 Artifact is a single page website with Java + Spring Boot on backend, Node.js + Vue.js on frontend and PostgreSQL as a DB. Both sides of project connected via Websocket + SockJs with hot reload. Authentication is possible with OAuth2 via Google and manual with JWT token with CORS and CSRF security.
 
 ## Technology stack
-Компонент         | Технология
+Component         | Technology
 ---               | ---
 Frontend          | [Vue.js 2](https://github.com/vuejs/vue)
 Backend (REST)    | [SpringBoot](https://projects.spring.io/spring-boot) (Java)
