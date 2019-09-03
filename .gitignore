@@ -21,7 +21,6 @@ yarn.lock*
 out
 artifacts/
 .gradle
-gradle
 build
 
 # Editor directories and files
