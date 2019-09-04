@@ -20,7 +20,7 @@ Server Build Tools| Gradle
 
 ### Backend start
 
-First you need to create db with name "artifact" in postgreSQL. Login and password are in properties file.
+First you need to create db with name "artifact" in postgreSQL. Login, password and path to db are in properties file.
 
 `gradle Build` : go to root dir with  `build.gradle` and run:
 
