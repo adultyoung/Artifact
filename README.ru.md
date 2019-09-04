@@ -20,6 +20,8 @@ Server Build Tools| Gradle
 
 ### Запуск бэкэнда
 
+Для начала вам нужно создать БД и назвать ее "artifact". Логин, пароль и путь к БД находяться в файле properties.
+
 `gradle Build` : Перейдите в корневую папку  `build.gradle` и выполните:
 
 ```sbtshell
