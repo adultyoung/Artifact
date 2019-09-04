@@ -1,11 +1,11 @@
 <template>
     <v-container fluid>
         <post-form :postAttr="post"/>
-        <v-layout column align-center>
-            <post-row v-for="post in sortedPosts"
+        <v-layout align-center column>
+            <post-row :editPost="editPost"
                       :key="post.id"
                       :post="post"
-                      :editPost="editPost"/>
+                      v-for="post in sortedPosts"/>
             <lazy-loader></lazy-loader>
         </v-layout>
     </v-container>

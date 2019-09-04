@@ -1,23 +1,23 @@
 <template>
     <v-card
-            :flat= true
-            :outlined= true
+            :flat=true
+            :outlined=true
             :width=560
-            max-height="1200px"
-            class="ma-2">
+            class="ma-2"
+            max-height="1200px">
         <v-card-text primary-title>
             <user-link
-                :user="post.author"
-                size="48"
+                    :user="post.author"
+                    size="48"
             ></user-link>
             <div class="pt-3">
                 {{ post.text }}
             </div>
         </v-card-text>
-        <media v-if="post.link" :post="post"></media>
+        <media :post="post" v-if="post.link"></media>
         <v-card-actions>
-            <v-btn value="Edit" @click="edit" small flat round>Edit</v-btn>
-            <v-btn icon @click="del" small>
+            <v-btn @click="edit" flat round small value="Edit">Edit</v-btn>
+            <v-btn @click="del" icon small>
                 <v-icon>delete</v-icon>
             </v-btn>
         </v-card-actions>
@@ -36,7 +36,7 @@
 
     export default {
         props: ['post', 'editPost'],
-        components: {UserLink, CommentList, Media },
+        components: {UserLink, CommentList, Media},
         methods: {
             ...mapActions(['removePostAction']),
             edit() {

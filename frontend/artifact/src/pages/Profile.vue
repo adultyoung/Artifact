@@ -3,7 +3,7 @@
         <v-layout justify-space-around>
             <v-flex :xs6="!$vuetify.breakpoint.xsOnly">
                 <div class="title mb-3">User profile</div>
-                <v-layout row justify-space-between>
+                <v-layout justify-space-between row>
                     <v-flex class="px-1">
                         <v-img :src="profile.picture"></v-img>
                     </v-flex>
@@ -17,13 +17,13 @@
                                 {{profile.subscriptions && profile.subscriptions.length}} subscriptions
                             </v-flex>
                             <router-link
-                                    v-if="isMyProfile"
                                     :to="`/subscriptions/${profile.id}`"
+                                    v-if="isMyProfile"
                             >
                                 {{profile.subscribers && profile.subscribers.length}} subscribers
                             </router-link>
                             <v-flex
-                                v-else
+                                    v-else
                             >
                                 {{profile.subscribers && profile.subscribers.length}} subscribers
                             </v-flex>
@@ -31,8 +31,8 @@
                     </v-flex>
                 </v-layout>
                 <v-btn
-                        v-if="!isMyProfile"
                         @click="changeSubscription"
+                        v-if="!isMyProfile"
                 >
                     {{isISubscribed ? 'Unsubscribe' : 'Subscribe'}}
                 </v-btn>
@@ -70,14 +70,14 @@
         },
         methods: {
             async changeSubscription() {
-                const data = await profileApi.changeSubscription(this.profile.id)
+                const data = await profileApi.changeSubscription(this.profile.id);
                 this.profile = await data.json()
             },
             async updateProfile() {
-                const id = this.$route.params.id || this.$store.state.profile.id
+                const id = this.$route.params.id || this.$store.state.profile.id;
 
-                const data = await profileApi.get(id)
-                this.profile = await data.json()
+                const data = await profileApi.get(id);
+                this.profile = await data.json();
 
                 this.$forceUpdate()
             }

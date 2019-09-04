@@ -1,11 +1,11 @@
 <template>
     <iframe
-            width="560"
-            height="315"
             :src="targetSrc"
-            frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            frameborder="0"
+            height="315"
+            width="560"
     ></iframe>
 </template>
 
@@ -15,7 +15,7 @@
         props: ['src'],
         computed: {
             targetSrc() {
-                let parts = this.src.split('/')
+                let parts = this.src.split('/');
                 return `https://www.youtube.com/embed/${parts[parts.length - 1]}`
             }
         }

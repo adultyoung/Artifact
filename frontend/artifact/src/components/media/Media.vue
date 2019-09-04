@@ -1,7 +1,7 @@
 <template>
     <v-card flat>
         <v-flex v-if="type === 'href'">
-            <v-img v-if="post.linkCover" :src="post.linkCover" aspect-ratio="2.75"></v-img>
+            <v-img :src="post.linkCover" aspect-ratio="2.75" v-if="post.linkCover"></v-img>
             <v-card-title>
                 <div>
                     <h3>
@@ -11,9 +11,9 @@
                 </div>
             </v-card-title>
         </v-flex>
-        <v-flex v-if="type === 'image'" >
+        <v-flex v-if="type === 'image'">
             <a :href="post.link">
-                <v-img v-if="post.linkCover" height="600px" :src="post.linkCover" aspect-ratio="2.75"></v-img>
+                <v-img :src="post.linkCover" aspect-ratio="2.75" height="600px" v-if="post.linkCover"></v-img>
             </a>
         </v-flex>
         <v-flex v-if="type === 'youtube'">
@@ -27,7 +27,7 @@
 
     export default {
         name: 'Media',
-        components: { YouTube },
+        components: {YouTube},
         props: ['post'],
         data() {
             return {

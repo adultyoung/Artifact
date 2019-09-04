@@ -31,11 +31,11 @@ public class MainController {
     private final UserDetailsDao userDetailsDao;
     private final ObjectWriter postWriter;
     private final ObjectWriter profileWriter;
-    @Value("${spring.profiles.active}")
+    @Value("true")
     private String profile;
 
     @Autowired
-    public MainController(PostService postService, UserDetailsDao userDetailsDao, CustomUserDetailsService service , ObjectMapper mapper) {
+    public MainController(PostService postService, UserDetailsDao userDetailsDao, CustomUserDetailsService service, ObjectMapper mapper) {
         this.postService = postService;
         this.userDetailsDao = userDetailsDao;
         this.service = service;
@@ -82,7 +82,7 @@ public class MainController {
     }
 
     @GetMapping("activate/{code}")
-    public String activate (@PathVariable String code) {
+    public String activate(@PathVariable String code) {
         service.activateUser(code);
 
         return "redirect:/";

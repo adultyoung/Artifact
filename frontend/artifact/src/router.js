@@ -6,17 +6,17 @@ import Profile from './pages/Profile.vue'
 import Subscriptions from './pages/Subscriptions.vue'
 import Channels from './pages/Channels.vue'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
-    { path: '/', component: MessagesList },
-    { path: '/auth', component: Auth },
-    { path: '/user/:id?', component: Profile },
-    { path: '/subscriptions/:id', component: Subscriptions },
-    { path: '*', component: Auth },
-    { path: '/channels', component: Channels},
+    {path: '/', component: MessagesList},
+    {path: '/auth', component: Auth},
+    {path: '/user/:id?', component: Profile},
+    {path: '/subscriptions/:id', component: Subscriptions},
+    {path: '*', component: Auth},
+    {path: '/channels', component: Channels},
 
-]
+];
 
 export default new VueRouter({
     mode: 'history',

@@ -82,9 +82,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .antMatcher("/**").authorizeRequests()
                 .antMatchers("/", "/login", "/registration/**", "/sockjs-node/**", "/gs-guide-websocket/**", "/assets/**", "/auth/oauth", "error**").permitAll()
-                .antMatchers("/auth/signin").permitAll()
-                .antMatchers(HttpMethod.GET, "/posts/**").hasAuthority("USER")
-                .antMatchers(HttpMethod.DELETE, "/posts/**").hasAuthority("USER")
                 .and().logout().logoutSuccessUrl("/").permitAll()
                 .and()
                 .addFilterBefore(new JwtTokenAuthenticationFilter("/login", jwtTokenProvider, authenticationManager()), UsernamePasswordAuthenticationFilter.class);

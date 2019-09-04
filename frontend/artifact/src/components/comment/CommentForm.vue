@@ -1,10 +1,10 @@
 <template>
-    <v-layout row class="px-3">
+    <v-layout class="px-3" row>
         <v-text-field
+                @keyup.enter="save"
                 label="Add comment"
                 placeholder="Write something"
                 v-model="text"
-                @keyup.enter="save"
         />
         <v-btn @click="save">
             Add
@@ -31,7 +31,7 @@
                     post: {
                         id: this.postId
                     }
-                })
+                });
 
                 this.text = ''
             }

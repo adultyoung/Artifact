@@ -1,27 +1,27 @@
 <template>
     <v-flex ma-2>
         <router-link
-        :to="`/user/${user.id}`"
-    >
-        <v-avatar
-                v-if="user && user.picture"
-                :size="`${size || 36}px`"
+                :to="`/user/${user.id}`"
         >
-            <img
-                    :src="user.picture"
-                    :alt="user.name"
+            <v-avatar
+                    :size="`${size || 36}px`"
+                    v-if="user && user.picture"
             >
-        </v-avatar>
+                <img
+                        :alt="user.name"
+                        :src="user.picture"
+                >
+            </v-avatar>
 
-        <v-avatar
-                v-else
-                :size="`${size || 36}px`"
-        >
-            <v-icon>account_circle</v-icon>
-        </v-avatar>
+            <v-avatar
+                    :size="`${size || 36}px`"
+                    v-else
+            >
+                <v-icon>account_circle</v-icon>
+            </v-avatar>
             &nbsp;
-        <span>{{ userName }}</span>
-    </router-link>
+            <span>{{ userName }}</span>
+        </router-link>
     </v-flex>
 
 </template>

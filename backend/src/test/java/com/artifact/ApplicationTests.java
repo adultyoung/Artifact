@@ -9,14 +9,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.security.test.context.support.WithMockUser;
+import org.springframework.security.test.context.support.WithSecurityContext;
 import org.springframework.security.test.context.support.WithUserDetails;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.context.WebApplicationContext;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
 import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppContextSetup;
 
@@ -39,39 +44,51 @@ public class ApplicationTests {
     }
 
     @Test
-    public void getAllVehicles() throws Exception {
-        this.mockMvc
-                .perform(
-                        get("/v1/posts")
-                                .accept(MediaType.APPLICATION_JSON)
-                )
-                .andExpect(status().isOk());
-    }
-
-    @Test
     public void testSave() throws Exception {
 
         this.mockMvc
                 .perform(
-                        post("/v1/posts")
-                                .content(this.objectMapper.writeValueAsBytes(PostForm.builder().message("test").build()))
+                        post("/post")
+                                .content(this.objectMapper.writeValueAsBytes(new HashMap<String, String>(){{put("text", "message");}}))
                                 .contentType(MediaType.APPLICATION_JSON)
                 )
                 .andExpect(status().is4xxClientError());
 
     }
+    @Test
+    @WithUserDetails
+    public void testUpdate() throws Exception {
+
+        this.mockMvc
+                .perform(
+                        put("/post/{id}", 125L).with(csrf())
+                                .content(this.objectMapper.writeValueAsBytes(new HashMap<String, String>(){{put("text", "message");}}))
+                                .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andExpect(status().is2xxSuccessful());
+
+    }
 
     @Test
-    @WithUserDetails()
+    @WithUserDetails
     public void testSaveWithMock() throws Exception {
 
         this.mockMvc
                 .perform(
-                        post("/v1/posts")
-                                .content(this.objectMapper.writeValueAsBytes(PostForm.builder().message("test").build()))
+                        post("/post").with(csrf())
+                                .content(this.objectMapper.writeValueAsBytes(new HashMap<String, String>(){{put("text", "message");}}))
                                 .contentType(MediaType.APPLICATION_JSON)
                 )
-                .andExpect(status().isCreated());
+                .andExpect(status().is2xxSuccessful());
     }
 
+    @Test
+    public void testDelete() throws Exception {
+
+        this.mockMvc
+                .perform(
+                        delete("/post/{id}", 125L).with(csrf())
+                        .contentType(MediaType.APPLICATION_JSON)
+                ).andExpect(status().is2xxSuccessful());
+    }
 }

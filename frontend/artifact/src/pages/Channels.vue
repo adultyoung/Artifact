@@ -1,10 +1,10 @@
 <template>
     <v-container>
-        <v-layout align-center justify-space-around column>
+        <v-layout align-center column justify-space-around>
             <v-list>
                 <v-list-tile
-                        v-for="channel in channels"
                         :key="channel.id"
+                        v-for="channel in channels"
                 >
                     <user-link
                             :user="channel"

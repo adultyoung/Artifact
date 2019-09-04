@@ -1,18 +1,18 @@
 <template>
-    <v-layout row mx-5>
-    <v-flex xs12>
-        <v-text-field
-                label="New post"
-                placeholder="Write something"
-                v-model="text"
-                @keyup.enter="save"
-        />
-    </v-flex>
-    <v-flex >
-        <v-btn @click="save">
-            Save
-        </v-btn>
-    </v-flex>
+    <v-layout mx-5 row>
+        <v-flex xs12>
+            <v-text-field
+                    @keyup.enter="save"
+                    label="New post"
+                    placeholder="Write something"
+                    v-model="text"
+            />
+        </v-flex>
+        <v-flex>
+            <v-btn @click="save">
+                Save
+            </v-btn>
+        </v-flex>
     </v-layout>
 </template>
 
@@ -29,7 +29,7 @@
         },
         watch: {
             postAttr(newVal, oldVal) {
-                this.text = newVal.text
+                this.text = newVal.text;
                 this.id = newVal.id
             }
         },
@@ -39,7 +39,7 @@
                 const post = {
                     id: this.id,
                     text: this.text
-                }
+                };
 
                 if (this.id) {
                     this.updatePostAction(post)
@@ -47,7 +47,7 @@
                     this.addPostAction(post)
                 }
 
-                this.text = ''
+                this.text = '';
                 this.id = null
             }
         }

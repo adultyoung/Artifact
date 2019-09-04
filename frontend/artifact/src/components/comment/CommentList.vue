@@ -8,8 +8,8 @@
                 v-for="(item, index) in comments"
         >
             <v-divider
-                    v-if="index > 0"
                     :key="index"
+                    v-if="index > 0"
             ></v-divider>
 
             <comment-item

@@ -10,8 +10,8 @@
         methods: mapActions(['loadPageAction']),
         mounted() {
             window.onscroll = () => {
-                const el = document.documentElement
-                const isBottomOfScreen = el.scrollTop + window.innerHeight === el.offsetHeight
+                const el = document.documentElement;
+                const isBottomOfScreen = el.scrollTop + window.innerHeight === el.offsetHeight;
 
                 if (isBottomOfScreen) {
                     this.loadPageAction()
